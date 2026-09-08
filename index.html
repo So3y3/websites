@@ -214,6 +214,30 @@
       font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; margin-bottom: 1.25rem;
     }
 
+    /* Rescue band */
+    .rescue { background: var(--lemon); padding: 4.5rem var(--gutter) 5rem; }
+    .rescue-inner { max-width: 720px; }
+    .rescue-inner p { font-size: 1.05rem; color: var(--navy); margin-bottom: 1.75rem; line-height: 1.65; max-width: 640px; }
+
+    /* FAQ */
+    .faq { padding: 5rem var(--gutter); }
+    .faq h2 { margin-bottom: 2rem; }
+    .faq-grid { display: grid; gap: 0.9rem; max-width: 760px; }
+    .faq-item {
+      background: var(--white); border-radius: 18px; padding: 1.05rem 1.4rem;
+      box-shadow: 0 3px 0 rgba(24,33,74,0.06);
+      transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .faq-item:hover { transform: translateY(-3px); }
+    .faq-item summary {
+      font-family: var(--display); font-weight: 600; font-size: 1.02rem; cursor: pointer;
+      list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary .faq-icon { font-size: 1.35rem; font-weight: 500; color: var(--coral); transition: transform 0.25s ease; flex-shrink: 0; }
+    .faq-item[open] summary .faq-icon { transform: rotate(45deg); }
+    .faq-item p { margin-top: 0.75rem; font-size: 0.97rem; color: rgba(24,33,74,0.75); line-height: 1.65; }
+
     /* What you get */
     .perks { padding: 5rem var(--gutter); }
     .perks-head { max-width: 640px; margin-bottom: 3rem; }
@@ -548,6 +572,48 @@
           <p class="note">No surprises and no hidden extras. Tell me what you need and I will reply within a day or two.</p>
           <a href="#contact" class="btn btn-primary">Get in touch <span class="arrow">&#8599;</span></a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rescue band -->
+  <section class="rescue" id="rescue">
+    <div class="wrap">
+      <div class="rescue-inner reveal">
+        <p class="section-label"><span class="sq"></span>Already have a site?</p>
+        <h2>Stuck on a web builder?</h2>
+        <p>Paying Wix, Squarespace or GoDaddy every month for a site you do not own? I will redesign your site, rebuild it by hand, and move it off the platform for good. Same flat £99. You keep your domain, you own every file, and the monthly payments stop.</p>
+        <a href="#contact" class="btn btn-primary">Let's chat <span class="arrow">&#8599;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <p class="section-label reveal"><span class="sq"></span>Good questions</p>
+      <h2 class="reveal">The stuff everyone asks.</h2>
+      <div class="faq-grid reveal">
+        <details class="faq-item">
+          <summary>How long does it take? <span class="faq-icon">+</span></summary>
+          <p>Usually two weeks from our first chat to a live site. If you need it faster, tell me and I will see what I can do.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What about hosting and my domain? <span class="faq-icon">+</span></summary>
+          <p>Your site is hand coded and static, so it can be hosted for free on solid, fast platforms. The only thing you keep paying for is your domain, and that is normal for any website.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What if I need changes later? <span class="faq-icon">+</span></summary>
+          <p>Small tweaks are free for the first month after handover. After that we agree a fair price for anything bigger. And because you own every file, you can take your site anywhere, anytime.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you help with the words and photos? <span class="faq-icon">+</span></summary>
+          <p>Yes. We work through your content together and I will help you say what you actually want to say. No photos? I will find proper free stock images that fit your vibe.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why is it only £99? <span class="faq-icon">+</span></summary>
+          <p>Because it should be. Websites are not magic, and small businesses should not pay agency prices or rent a template forever. I keep the process small and personal, so the price stays small too.</p>
+        </details>
       </div>
     </div>
   </section>
