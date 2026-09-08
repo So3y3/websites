@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Wee Sites | Custom Coded Websites, Playfully Made</title>
-  <meta name="description" content="Affordable custom coded websites for independent people, small businesses and creative brands. No templates, no monthly fees, no agency fuss.">
+  <title>Wee Sites | Custom Coded Websites for £99</title>
+  <meta name="description" content="Custom coded websites for £99. For therapists, coaches, chefs, yacht crew and small businesses. No templates, no monthly fees.">
   <!-- Update this to your real domain once live -->
   <link rel="canonical" href="https://www.weesites.co.uk/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Wee Sites | Custom Coded Websites, Playfully Made">
-  <meta property="og:description" content="Affordable custom coded websites for independent people, small businesses and creative brands. No templates, no monthly fees, no agency fuss.">
+  <meta property="og:title" content="Wee Sites | Custom Coded Websites for £99">
+  <meta property="og:description" content="Custom coded websites for £99. For therapists, coaches, chefs, yacht crew and small businesses. No templates, no monthly fees.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.weesites.co.uk/">
   <meta property="og:image" content="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/fc6bd6cd8_generated_image.png">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wee Sites | Custom Coded Websites, Playfully Made">
-  <meta name="twitter:description" content="Affordable custom coded websites for independent people, small businesses and creative brands.">
+  <meta name="twitter:title" content="Wee Sites | Custom Coded Websites for £99">
+  <meta name="twitter:description" content="Custom coded websites for £99. For therapists, coaches, chefs, yacht crew and small businesses.">
   <meta name="twitter:image" content="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/fc6bd6cd8_generated_image.png">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%237289DA' rx='24'/></svg>">
@@ -33,6 +33,7 @@
     "url": "https://www.weesites.co.uk/",
     "description": "Custom coded websites for independent people, professionals and small businesses. No templates, no monthly platform fees.",
     "priceRange": "£",
+    "offers": { "@type": "Offer", "price": "99.00", "priceCurrency": "GBP", "description": "Custom coded website, £99 per site" },
     "areaServed": "Worldwide",
     "knowsAbout": ["Website design", "Web development", "Custom coded websites", "Small business websites"]
   }
@@ -264,6 +265,11 @@
       color: var(--white); font-family: var(--display); font-weight: 600; font-size: 1rem;
     }
 
+    /* About */
+    .about { padding: 4.5rem var(--gutter) 3rem; background: var(--white); }
+    .about-inner { max-width: 700px; }
+    .about-inner p { font-size: 1.02rem; color: rgba(24,33,74,0.75); margin-bottom: 1.1rem; line-height: 1.7; }
+
     /* Process */
     .process { padding: 6rem var(--gutter); background: var(--white); }
     .process-head { max-width: 600px; margin-bottom: 3.5rem; }
@@ -382,10 +388,11 @@
     </a>
     <div class="nav-links">
       <a href="#work">Work</a>
+      <a href="#about">About</a>
       <a href="#process">Process</a>
       <a href="#pricing">Pricing</a>
     </div>
-    <a href="#contact" class="btn btn-primary">Get a quote <span class="arrow">&#8599;</span></a>
+    <a href="#contact" class="btn btn-primary">Get in touch <span class="arrow">&#8599;</span></a>
   </nav>
 
   <!-- Hero -->
@@ -395,14 +402,14 @@
     <div class="hero-blob blob-3"></div>
     <div class="hero-blob blob-4"></div>
     <div class="hero-content">
-      <p class="kicker reveal"><span class="emoji">👋</span> Hey, I'm Kris. I build websites.</p>
+      <p class="kicker reveal"><span class="emoji">👋</span> Hey, I'm Kris. A real person building real websites.</p>
       <h1 class="reveal">Small sites.<br>Big <span class="highlight wiggle-word">personality.</span></h1>
       <p class="hero-body reveal">I design and hand code custom websites for independent people, small businesses and creative brands. No templates, no monthly platform fees, no agency queue. Just a proper site, made around you, priced fairly.</p>
       <div class="hero-ctas reveal">
-        <a href="#contact" class="btn btn-primary">Get your free quote <span class="arrow">&#8599;</span></a>
+        <a href="#contact" class="btn btn-primary">Let's chat <span class="arrow">&#8599;</span></a>
         <a href="#work" class="btn btn-outline">See the work</a>
       </div>
-      <p class="hero-note reveal" style="margin-top: 1.5rem;">Usually built and live within two weeks.</p>
+      <p class="hero-note reveal" style="margin-top: 1.5rem;">Flat £99 a site. Usually built and live within two weeks.</p>
     </div>
   </section>
 
@@ -451,6 +458,11 @@
       </div>
       <div class="portfolio-grid reveal">
         <div class="port-card">
+          <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/d555552d0_generated_c27ab301.png" width="896" height="1200" loading="lazy" alt="A small brass key resting on crisp white linen">
+          <span class="port-tag">For therapists &amp; coaches</span>
+          <span class="port-caption">A calm space that builds trust</span>
+        </div>
+        <div class="port-card">
           <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/e89aa2a50_generated_5ff6e747.png" width="896" height="1200" loading="lazy" alt="Close up of a chef plating a dish with a sprig of mint">
           <span class="port-tag">For chefs</span>
           <span class="port-caption">Menus that make you hungry</span>
@@ -458,18 +470,25 @@
         <div class="port-card">
           <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/369a3f44c_generated_c6746bef.png" width="896" height="1200" loading="lazy" alt="Polished yacht railing reflecting sea and sky">
           <span class="port-tag">For yacht crew</span>
-          <span class="port-caption">A CV that travels with you</span>
+          <span class="port-caption">Portfolios, lifestyle and CVs that travel</span>
         </div>
         <div class="port-card">
           <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/1aeb8935d_generated_a9c00acc.png" width="896" height="1200" loading="lazy" alt="Crisp white linen sheets in a boutique hotel">
           <span class="port-tag">For boutique stays</span>
           <span class="port-caption">Rooms that feel like an invite</span>
         </div>
-        <div class="port-card">
-          <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/d555552d0_generated_c27ab301.png" width="896" height="1200" loading="lazy" alt="A small brass key resting on crisp white linen">
-          <span class="port-tag">For your ownership</span>
-          <span class="port-caption">Handed over, keys and all</span>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <p class="section-label reveal"><span class="sq"></span>About me</p>
+      <div class="about-inner reveal">
+        <h2>Hi, I'm Kris. A real person, building real websites.</h2>
+        <p>I grew up in a small town in Ireland, spent years working on $300M superyachts, and built my own businesses from scratch along the way. Every one of them needed a website that actually worked, so I learned to build them myself.</p>
+        <p>That turned into the thing I do now. Hand coded sites for therapists, coaches, chefs, yacht crew and small businesses. Sites that load fast and get found on Google. No agency, no middleman, no template. Just me, and a site that's yours to keep.</p>
       </div>
     </div>
   </section>
@@ -490,7 +509,7 @@
         <div class="process-step reveal">
           <div class="step-num">2</div>
           <h3>I design and build</h3>
-          <p>You get a design draft to react to, then I hand code the whole thing around your feedback.</p>
+          <p>You get a design draft to react to, then I hand code the whole thing around your feedback. Need a contact form, a blog or a booking flow? That is all hand coded too, never bolted on.</p>
         </div>
         <div class="process-step reveal">
           <div class="step-num">3</div>
@@ -507,19 +526,20 @@
       <div class="pricing-grid">
         <div>
           <h2>Small price.<br>Serious <span class="highlight">site.</span></h2>
-          <p class="pricing-body">Every project is quoted around what you actually need, not a one size fits all package. No hidden extras, no surprise invoices, no monthly platform rent.</p>
+          <p class="pricing-body">Every site is £99. Custom designed and hand coded around what you actually need, not squeezed into a one size fits all package. No hidden extras, no surprise invoices, no monthly platform rent.</p>
           <ul class="pricing-list">
-            <li>One flat, honest price agreed up front</li>
+            <li>One flat price of £99 per site, agreed up front</li>
             <li>Custom design and hand coded build</li>
+            <li>Custom coded features like contact forms, blogs and booking flows</li>
             <li>You own every file when we are done</li>
             <li>Only ongoing cost is your domain, and that is normal for any website</li>
           </ul>
         </div>
         <div class="pricing-card">
-          <span class="tag">Get started</span>
-          <p class="amount">Free <span>quote, no strings</span></p>
-          <p class="note">Tell me what you need and I will send a clear, fixed price within a day or two.</p>
-          <a href="#contact" class="btn btn-primary">Ask for a quote <span class="arrow">&#8599;</span></a>
+          <span class="tag">Flat price</span>
+          <p class="amount">£99 <span>per site, all in</span></p>
+          <p class="note">No surprises and no hidden extras. Tell me what you need and I will reply within a day or two.</p>
+          <a href="#contact" class="btn btn-primary">Get in touch <span class="arrow">&#8599;</span></a>
         </div>
       </div>
     </div>
