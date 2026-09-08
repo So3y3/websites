@@ -45,9 +45,9 @@
   <!-- Fonts: deferred so they never block rendering -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/Nohemi-Regular.woff2" crossorigin>
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
     onload="this.onload=null;this.rel='stylesheet'">
@@ -56,34 +56,34 @@
   </noscript>
 
   <style>
-    /* Nohemi, free typeface by Rajesh Rajput, self hosted via jsDelivr, font-display swap keeps it non blocking */
+    /* Nohemi, free typeface by Rajesh Rajput, self hosted as woff2 in /fonts, font-display swap keeps it non blocking */
     @font-face {
       font-family: 'Nohemi';
       font-weight: 400;
       font-style: normal;
       font-display: swap;
-      src: url('https://cdn.jsdelivr.net/npm/@tamagui/font-nohemi@2.7.7/fonts/Nohemi-Regular.ttf') format('truetype');
+      src: url('/fonts/Nohemi-Regular.woff2') format('woff2');
     }
     @font-face {
       font-family: 'Nohemi';
       font-weight: 500;
       font-style: normal;
       font-display: swap;
-      src: url('https://cdn.jsdelivr.net/npm/@tamagui/font-nohemi@2.7.7/fonts/Nohemi-Medium.ttf') format('truetype');
+      src: url('/fonts/Nohemi-Medium.woff2') format('woff2');
     }
     @font-face {
       font-family: 'Nohemi';
       font-weight: 600;
       font-style: normal;
       font-display: swap;
-      src: url('https://cdn.jsdelivr.net/npm/@tamagui/font-nohemi@2.7.7/fonts/Nohemi-SemiBold.ttf') format('truetype');
+      src: url('/fonts/Nohemi-SemiBold.woff2') format('woff2');
     }
     @font-face {
       font-family: 'Nohemi';
       font-weight: 700;
       font-style: normal;
       font-display: swap;
-      src: url('https://cdn.jsdelivr.net/npm/@tamagui/font-nohemi@2.7.7/fonts/Nohemi-Bold.ttf') format('truetype');
+      src: url('/fonts/Nohemi-Bold.woff2') format('woff2');
     }
 
     :root {
@@ -491,7 +491,7 @@
       </div>
       <div class="portfolio-grid reveal">
         <div class="port-card">
-          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/9f6d742f6_generated_image.png" width="896" height="1200" loading="lazy" alt="A calm therapy practice room with two soft armchairs by a bright window">
+          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/d76221ba1_therapy-optimized.webp" width="800" height="800" loading="lazy" alt="A calm therapy practice room with two soft armchairs by a bright window">
           <span class="port-tag">For therapists &amp; coaches</span>
           <span class="port-caption">Sites that track the important stuff</span>
         </div>
@@ -673,7 +673,7 @@
       var nav = document.getElementById('nav');
       function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 40); }
       window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
+      requestAnimationFrame(onScroll);
 
       var reveals = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
