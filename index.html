@@ -48,6 +48,9 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preload" as="font" type="font/woff2" href="/fonts/Nohemi-Regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/Nohemi-Medium.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/Nohemi-SemiBold.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/Nohemi-Bold.woff2" crossorigin>
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
     onload="this.onload=null;this.rel='stylesheet'">
@@ -180,11 +183,14 @@
 
     .hero-content { max-width: var(--max); margin: 0 auto; width: 100%; position: relative; z-index: 2; }
     .kicker {
-      display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--display);
+      display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--display);
       font-weight: 600; font-size: 0.85rem; letter-spacing: 0.02em; color: var(--navy);
       background: var(--white); padding: 0.5rem 1.1rem; border-radius: 100px; margin-bottom: 1.75rem;
       box-shadow: 0 3px 0 rgba(24,33,74,0.1);
     }
+    .kicker-row { display: inline-flex; align-items: center; gap: 0.6rem; }
+    .kicker-row2 { display: inline; }
+    .kicker-row2::before { content: " "; }
     .kicker .emoji { font-size: 1.05rem; }
 
     .hero h1 {
@@ -404,6 +410,13 @@
       .footer-meta { text-align: left; }
       .portfolio { border-radius: 32px 32px 0 0; }
       .pricing-band { margin: 0 1rem; border-radius: 28px; padding: 2.5rem 1.5rem; }
+      .hero { min-height: auto; justify-content: flex-start; padding: 6rem var(--gutter) 3rem; }
+      .kicker {
+        display: flex; flex-direction: column; align-items: flex-start; gap: 0.15rem;
+        border-radius: 18px; padding: 0.65rem 1rem;
+      }
+      .kicker-row2 { display: block; }
+      .kicker-row2::before { content: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -435,7 +448,7 @@
     <div class="hero-blob blob-3"></div>
     <div class="hero-blob blob-4"></div>
     <div class="hero-content">
-      <p class="kicker reveal"><span class="emoji">👋</span> Hey, I'm Kris. A real person building real websites.</p>
+      <p class="kicker reveal"><span class="kicker-row"><span class="emoji">👋</span> Hey, I'm Kris.</span><span class="kicker-row2">A real person building real websites.</span></p>
       <h1 class="reveal">Small sites.<br>Big <span class="highlight wiggle-word">personality.</span></h1>
       <p class="hero-body reveal">I design and hand code custom websites for independent people, small businesses and creative brands. No templates, no monthly platform fees, no agency queue. Just a proper site, made around you, priced fairly.</p>
       <div class="hero-ctas reveal">
@@ -491,17 +504,17 @@
       </div>
       <div class="portfolio-grid reveal">
         <div class="port-card">
-          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/d76221ba1_therapy-optimized.webp" width="800" height="800" loading="lazy" alt="A calm therapy practice room with two soft armchairs by a bright window">
+          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/777f74198_therapy-optimized-v2.webp" width="640" height="800" loading="lazy" alt="A calm therapy practice room with two soft armchairs by a bright window">
           <span class="port-tag">For therapists &amp; coaches</span>
           <span class="port-caption">Sites that track the important stuff</span>
         </div>
         <div class="port-card">
-          <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/e89aa2a50_generated_5ff6e747.png" width="896" height="1200" loading="lazy" alt="Close up of a chef plating a dish with a sprig of mint">
+          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/8c9198d87_chef-optimized.webp" width="640" height="800" loading="lazy" alt="Close up of a chef plating a dish with a sprig of mint">
           <span class="port-tag">For chefs</span>
           <span class="port-caption">Menus that make you hungry</span>
         </div>
         <div class="port-card">
-          <img src="https://media.base44.com/images/public/6a9423e30b3b5c1cc9c0dcab/369a3f44c_generated_c6746bef.png" width="896" height="1200" loading="lazy" alt="Polished yacht railing reflecting sea and sky">
+          <img src="https://media.base44.com/images/public/6a35178fbcf93aec46a697fa/234f7c037_yacht-optimized.webp" width="640" height="800" loading="lazy" alt="Polished yacht railing reflecting sea and sky">
           <span class="port-tag">For yacht crew</span>
           <span class="port-caption">Portfolios, lifestyle and CVs that travel</span>
         </div>
@@ -673,7 +686,6 @@
       var nav = document.getElementById('nav');
       function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 40); }
       window.addEventListener('scroll', onScroll, { passive: true });
-      requestAnimationFrame(onScroll);
 
       var reveals = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
