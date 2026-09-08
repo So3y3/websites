@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Wee Sites</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%237289DA' rx='24'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+  </noscript>
+  <style>
+    :root {
+      --periwinkle: #7289DA;
+      --navy: #18214A;
+      --lemon: #F7FF72;
+      --coral: #FF9D7E;
+      --cream: #FFF9EC;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Fredoka', -apple-system, sans-serif;
+      background: var(--cream); color: var(--navy);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 2rem; overflow: hidden; position: relative;
+    }
+    .blob {
+      position: absolute; border-radius: 50%; z-index: 0;
+      animation: float 8s ease-in-out infinite;
+    }
+    .blob-1 { width: 260px; height: 260px; background: var(--periwinkle); opacity: 0.35; top: -60px; left: -60px; border-radius: 42% 58% 63% 37% / 45% 41% 59% 55%; }
+    .blob-2 { width: 140px; height: 140px; background: var(--lemon); bottom: 10%; right: 8%; border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%; animation-delay: 1.5s; }
+    .blob-3 { width: 90px; height: 90px; background: var(--coral); top: 20%; right: 20%; animation-delay: 3s; }
+    .content { position: relative; z-index: 1; }
+    h1 {
+      font-weight: 700; font-size: clamp(5rem, 20vw, 10rem); line-height: 0.9;
+      letter-spacing: -0.03em; margin-bottom: 1rem;
+    }
+    h1 .four { color: var(--periwinkle); display: inline-block; animation: wiggle 2.8s ease-in-out infinite; }
+    p { font-size: 1.15rem; color: rgba(24,33,74,0.7); margin-bottom: 2rem; max-width: 380px; margin-left: auto; margin-right: auto; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1rem;
+      background: var(--navy); color: #fff; padding: 0.9rem 1.8rem;
+      border-radius: 100px; text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 4px 0 rgba(24,33,74,0.25);
+      transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .btn:hover { transform: translateY(-3px) rotate(-1deg); }
+    @keyframes float { 0%, 100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(16px,-18px) rotate(9deg); } }
+    @keyframes wiggle { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+  </style>
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="content">
+    <h1><span class="four">404</span></h1>
+    <p>This page wandered off somewhere. The rest of the site is still here though.</p>
+    <a href="/" class="btn">Take me home &#8599;</a>
+  </div>
+</body>
+</html>
