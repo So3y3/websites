@@ -391,12 +391,6 @@
 .pb-hero h1 .hi{display:inline-block;background:var(--lemon);padding:0 .16em .04em;border-radius:.22em;transform:rotate(-2deg);box-shadow:0 5px 0 rgba(24,33,74,.14);}
 .pb-hero h1 .co{color:var(--coral);display:inline-block;}
 .pb-hero p.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:540px;color:rgba(24,33,74,.8);margin-bottom:1.8rem;}
-.chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2rem;}
-.chip{font-family:var(--display);font-weight:600;font-size:.92rem;padding:.55rem 1.05rem;border-radius:100px;border:2.5px solid var(--navy);background:var(--white);}
-.chip:nth-child(1){transform:rotate(-2deg);}
-.chip:nth-child(2){transform:rotate(1.6deg);background:var(--mint);}
-.chip:nth-child(3){transform:rotate(-1.2deg);background:var(--lemon);}
-.chip:nth-child(4){transform:rotate(2deg);background:var(--coral);}
 /* book mock */
 .book{position:relative;justify-self:center;width:min(360px,80vw);aspect-ratio:3/4;background:var(--navy);border-radius:10px 22px 22px 10px;box-shadow:0 30px 0 -12px rgba(24,33,74,.12),14px 18px 0 var(--periwinkle);transform:rotate(3deg);padding:2.2rem 1.9rem;display:flex;flex-direction:column;justify-content:flex-end;color:var(--cream);overflow:hidden;}
 .book::before{content:"";position:absolute;left:0;top:0;bottom:0;width:16px;background:rgba(0,0,0,.28);}
@@ -487,13 +481,7 @@
   .extra-card .badge{left:50%;margin-left:-62px;top:-52px;margin-top:0;}
 }
 @media (max-width:520px){.steps{grid-template-columns:1fr;} .pb-hero{padding-top:6.2rem;}}
-.chip .sm { display: none; }
 @media (max-width:520px){
-  .book-chips { top: -22px; gap: .3rem; left: calc(50% - .3rem); }
-  .book-chips .chip { font-size: .78rem; padding: .4rem .62rem; border-width: 2px; }
-  .book-chips .chip:nth-child(1) { display: none; }
-  .chip .lg { display: none; }
-  .chip .sm { display: inline; }
   .extra { margin-top: 3.6rem; }
   .extra-card { display: block; padding: 1.4rem 1.3rem 1.6rem; animation: none; transform: rotate(1.2deg); }
   .extra-card .badge { position: static; margin: 0 auto 1.1rem; width: 106px; height: 106px; transform: rotate(-6deg); }
@@ -503,25 +491,38 @@
 }
 @media (prefers-reduced-motion:reduce){ .extra-card { animation: none; } }
 
-    .book-chips { position: absolute; left: 50%; top: -30px; transform: translateX(-50%) rotate(-2deg);
       display: flex; gap: .45rem; white-space: nowrap; z-index: 7; }
-    .book-chips .chip { font-size: .8rem; padding: .45rem .85rem; box-shadow: 0 4px 0 rgba(24,33,74,.14); }
-    .book-chips .chip:nth-child(1) { transform: rotate(-3deg); }
-    .book-chips .chip:nth-child(2) { transform: rotate(2.2deg); background: var(--mint); }
-    .book-chips .chip:nth-child(3) { transform: rotate(-1.8deg); background: var(--lemon); }
-    .book-chips .chip:nth-child(4) { transform: rotate(2.8deg); background: var(--coral); }
-    .sticker.s1 { top: auto; bottom: 26px; left: -24px; transform: rotate(-8deg); }
 @media (max-width:520px){
-  .book-chips { left: calc(50% - .6rem); top: -22px; gap: .3rem; }
-  .book-chips .chip { font-size: .78rem; padding: .4rem .62rem; border-width: 2px; }
-  .book-chips .chip:nth-child(1) { display: none; }
+}
+
+.chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2rem;justify-content:center;}
+.chip{font-family:var(--display);font-weight:600;font-size:.92rem;padding:.55rem 1.05rem;border-radius:100px;border:2.5px solid var(--navy);background:var(--white);white-space:nowrap;}
+.chip:nth-child(1){transform:rotate(-2deg);}
+.chip:nth-child(2){transform:rotate(1.6deg);background:var(--mint);}
+.chip:nth-child(3){transform:rotate(-1.2deg);background:var(--lemon);}
+.chip:nth-child(4){transform:rotate(2deg);background:var(--coral);}
+.chip .sm{display:none;}
+@media (max-width:520px){
+  .chips{flex-wrap:nowrap;gap:.4rem;margin-bottom:1.6rem;}
+  .chip{font-size:.78rem;padding:.4rem .62rem;border-width:2px;}
+  .chip:nth-child(1){display:none;}
+  .chip .lg{display:none;}
+  .chip .sm{display:inline;}
 }
 </style>
 </head>
 <body>
 <nav class="nav" id="nav">
-  <a href="/" class="logo" aria-label="Wee Sites, home"><span class="dot"></span> wee Sites</a>
-  <div class="nav-links"><a href="/#work">Work</a><a href="/#process">Process</a><a href="#options">Options</a></div>
+  <a href="/" class="logo" aria-label="Wee Sites, home">
+      <span class="dot"></span> wee sites
+    </a>
+  <div class="nav-links">
+      <a href="/#work">Work</a>
+      <a href="/#about">About</a>
+      <a href="/#process">Process</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/playbook/">Playbook</a>
+    </div>
   <a href="#options" class="btn btn-primary">Get the playbook <span class="arrow">&#8599;</span></a>
 </nav>
 
@@ -532,6 +533,7 @@
       <p class="kicker reveal"><span class="emoji">&#9201;</span> Under 3 hours. One brew. Zero excuses.</p>
       <h1 class="reveal">Build your own<br><span class="hi">website.</span><br>Pay <span class="co">£0</span> a month.</h1>
       <p class="lead reveal">The Free Website Playbook takes you from zero accounts to live on Google. No code, no developer, no monthly fees. Just steps, and you can follow steps.</p>
+<div class="chips reveal"><span class="chip"><span class="lg">no code</span><span class="sm">no code</span></span><span class="chip"><span class="lg">no monthly fees</span><span class="sm">&#163;0 a month</span></span><span class="chip"><span class="lg">under 3 hours</span><span class="sm">under 3h</span></span><span class="chip"><span class="lg">yours forever</span><span class="sm">yours forever</span></span></div>
 
       
     </div>
@@ -542,8 +544,8 @@
         <h2>The Free<br>Website<span>Playbook</span></h2>
         <div class="quote">&ldquo;Websites are not magic. They are just steps.&rdquo;</div>
       </div>
-      <div class="book-chips"><span class="chip"><span class="lg">no code</span><span class="sm">no code</span></span><span class="chip"><span class="lg">no monthly fees</span><span class="sm">&#163;0 a month</span></span><span class="chip"><span class="lg">under 3 hours</span><span class="sm">under 3h</span></span><span class="chip"><span class="lg">yours forever</span><span class="sm">yours forever</span></span></div>
       <span class="sticker s1">16 pages</span>
+      <span class="sticker s2">no code</span>
       
     </div>
   </div>
