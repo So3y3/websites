@@ -411,12 +411,12 @@
 .sticker.s1{top:-14px;left:-20px;transform:rotate(-9deg);}
 .sticker.s2{bottom:30px;right:-26px;transform:rotate(7deg);background:var(--mint);}
 /* steps strip */
-.strip{padding:1.2rem 0 2.2rem;}
+
 .strip .row{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;max-width:var(--max);margin:0 auto;padding:0 var(--gutter);}
 .strip .st{font-family:var(--display);font-weight:600;font-size:.95rem;background:var(--white);padding:.6rem 1.1rem;border-radius:100px;box-shadow:0 3px 0 rgba(24,33,74,.1);}
 .strip .st b{color:var(--periwinkle-deep);margin-right:.35rem;}
 /* pricing */
-.opts{padding:2rem var(--gutter) 1rem;}
+.opts{padding:.5rem var(--gutter) 1rem;}
 .opts .head{text-align:center;max-width:720px;margin:0 auto 2.4rem;}
 .opts .head h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,5vw,3.4rem);line-height:1.02;letter-spacing:-.02em;}
 .opts .head h2 span{background:var(--periwinkle);color:var(--white);padding:0 .18em .04em;border-radius:.2em;display:inline-block;transform:rotate(1.5deg);}
@@ -505,7 +505,7 @@
       <h1 class="reveal">Build your own<br><span class="hi">website.</span><br>Pay <span class="co">£0</span> a month.</h1>
       <p class="lead reveal">The Free Website Playbook takes you from zero accounts to live on Google. No code, no developer, no monthly fees. Just steps, and you can follow steps.</p>
       <div class="chips reveal"><span class="chip">no code</span><span class="chip">no monthly fees</span><span class="chip">under 3 hours</span><span class="chip">yours forever</span></div>
-      <div class="hero-ctas reveal"><a href="#options" class="btn btn-primary">Pick your option <span class="arrow">&#8599;</span></a><a href="#inside" class="btn btn-outline">See what&rsquo;s inside</a></div>
+      
     </div>
     <div class="reveal" style="position:relative;">
       <div class="book" aria-label="The Free Website Playbook cover">
@@ -520,7 +520,6 @@
   </div>
 </section>
 
-<section class="strip"><div class="row"><span class="st"><b>1</b>GitHub</span><span class="st"><b>2</b>Vercel</span><span class="st"><b>3</b>Base44</span><span class="st"><b>4</b>Your domain</span><span class="st"><b>5</b>Google</span></div></section>
 
 <section class="opts" id="options">
   <div class="head reveal"><h2>Pick your <span>route.</span></h2><p style="margin-top:.9rem;color:rgba(24,33,74,.75);">Same playbook inside every one. The only question is how much of the work you want to do.</p></div>
@@ -550,7 +549,7 @@
       <a href="#get" class="btn btn-primary" data-plan="build">Build it for me <span class="arrow">&#8599;</span></a>
     </article>
   </div>
-  <p class="note-credit reveal">Start with the workbook and change your mind? What you paid comes off the call or the build.</p>
+  
 </section>
 
 <div class="extra reveal">
@@ -566,8 +565,17 @@
 </div>
 
 <section class="inside" id="inside">
-  <div class="head reveal"><h2>Twelve steps. <span>No magic.</span></h2><p style="margin-top:.9rem;color:rgba(24,33,74,.75);">From an empty browser tab to a live website on your own domain, in plain English.</p></div>
-  <div class="steps"><div class="step reveal"><div class="n">STEP 01</div><h4>GitHub</h4><p>The free folder in the cloud that keeps your website safe.</p></div><div class="step reveal"><div class="n">STEP 02</div><h4>Vercel</h4><p>Free hosting. The bit people expect to pay for.</p></div><div class="step reveal"><div class="n">STEP 03</div><h4>The pipe</h4><p>Connect them once. Every change then publishes itself.</p></div><div class="step reveal"><div class="n">STEP 04</div><h4>Base44</h4><p>An AI agent that writes your site from plain English.</p></div><div class="step reveal"><div class="n">STEP 05</div><h4>Steal some taste</h4><p>Collect 3 to 5 sites you love, legally.</p></div><div class="step reveal"><div class="n">STEP 06</div><h4>The questionnaire</h4><p>The 9 questions I ask every client. Rough answers win.</p></div><div class="step reveal"><div class="n">STEP 07</div><h4>Brief the agent</h4><p>Paste, say the magic words, iterate like a human.</p></div><div class="step reveal"><div class="n">STEP 08</div><h4>Publish</h4><p>Hand over one key, watch it go live by itself.</p></div><div class="step reveal"><div class="n">STEP 09</div><h4>Contact form</h4><p>Formspree, so your site has a door that opens.</p></div><div class="step reveal"><div class="n">STEP 10</div><h4>Your own domain</h4><p>yourname.com, the only money in the whole thing.</p></div><div class="step reveal"><div class="n">STEP 11</div><h4>Point it home</h4><p>Ten minutes of DNS, one time, never again.</p></div><div class="step reveal"><div class="n">STEP 12</div><h4>Get on Google</h4><p>Search Console, a sitemap, and one honest knock.</p></div></div>
+  <div class="head reveal"><h2>What you walk away with.</h2><p style="margin-top:.9rem;color:rgba(24,33,74,.75);">No process tour, no puzzle pieces. Just the things you end up owning.</p></div>
+  <div class="steps">
+      <div class="step reveal"><div class="n">LIVE</div><h4>A real, live website</h4><p>Yours, on your own domain, working the day you finish.</p></div>
+      <div class="step reveal"><div class="n">CUSTOM</div><h4>Custom, never a template</h4><p>Built around your work, not squeezed into somebody else's theme.</p></div>
+      <div class="step reveal"><div class="n">£0/MO</div><h4>No monthly payments</h4><p>Nothing rented, nothing cancelled later. The domain is the only yearly cost.</p></div>
+      <div class="step reveal"><div class="n">OWNED</div><h4>You own every file</h4><p>Take it anywhere, anytime. No lock-in and nobody holding your site hostage.</p></div>
+      <div class="step reveal"><div class="n">OUT</div><h4>Leave the builders behind</h4><p>Already paying a platform every month? Move off it and keep your domain.</p></div>
+      <div class="step reveal"><div class="n">FAST</div><h4>Fast and safe</h4><p>Light code that loads in a blink and has nothing sitting there to break into.</p></div>
+      <div class="step reveal"><div class="n">FOUND</div><h4>Found on Google</h4><p>Set up properly so search engines can actually see you.</p></div>
+      <div class="step reveal"><div class="n">YOURS</div><h4>Your words, sorted</h4><p>The questionnaire gets what you mean out of your head and onto the page.</p></div>
+  </div>
 </section>
 
 <section class="final reveal" id="get">
