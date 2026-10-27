@@ -489,9 +489,9 @@
 @media (max-width:520px){.steps{grid-template-columns:1fr;} .pb-hero{padding-top:6.2rem;}}
 .chip .sm { display: none; }
 @media (max-width:520px){
-  .chips { flex-wrap: nowrap; gap: .35rem; }
-  .chip { font-size: .7rem; padding: .38rem .6rem; border-width: 2px; white-space: nowrap; }
-  .chip:nth-child(n) { transform: none; }
+  .book-chips { top: -22px; gap: .3rem; left: calc(50% - .3rem); }
+  .book-chips .chip { font-size: .78rem; padding: .4rem .62rem; border-width: 2px; }
+  .book-chips .chip:nth-child(1) { display: none; }
   .chip .lg { display: none; }
   .chip .sm { display: inline; }
   .extra { margin-top: 3.6rem; }
@@ -502,6 +502,20 @@
   .extra-card .btn { margin-top: 1.1rem; width: 100%; justify-content: center; }
 }
 @media (prefers-reduced-motion:reduce){ .extra-card { animation: none; } }
+
+    .book-chips { position: absolute; left: 50%; top: -30px; transform: translateX(-50%) rotate(-2deg);
+      display: flex; gap: .45rem; white-space: nowrap; z-index: 7; }
+    .book-chips .chip { font-size: .8rem; padding: .45rem .85rem; box-shadow: 0 4px 0 rgba(24,33,74,.14); }
+    .book-chips .chip:nth-child(1) { transform: rotate(-3deg); }
+    .book-chips .chip:nth-child(2) { transform: rotate(2.2deg); background: var(--mint); }
+    .book-chips .chip:nth-child(3) { transform: rotate(-1.8deg); background: var(--lemon); }
+    .book-chips .chip:nth-child(4) { transform: rotate(2.8deg); background: var(--coral); }
+    .sticker.s1 { top: auto; bottom: 26px; left: -24px; transform: rotate(-8deg); }
+@media (max-width:520px){
+  .book-chips { left: calc(50% - .6rem); top: -22px; gap: .3rem; }
+  .book-chips .chip { font-size: .78rem; padding: .4rem .62rem; border-width: 2px; }
+  .book-chips .chip:nth-child(1) { display: none; }
+}
 </style>
 </head>
 <body>
@@ -518,7 +532,7 @@
       <p class="kicker reveal"><span class="emoji">&#9201;</span> Under 3 hours. One brew. Zero excuses.</p>
       <h1 class="reveal">Build your own<br><span class="hi">website.</span><br>Pay <span class="co">£0</span> a month.</h1>
       <p class="lead reveal">The Free Website Playbook takes you from zero accounts to live on Google. No code, no developer, no monthly fees. Just steps, and you can follow steps.</p>
-      <div class="chips reveal"><span class="chip"><span class="lg">no code</span><span class="sm">no code</span></span><span class="chip"><span class="lg">no monthly fees</span><span class="sm">&#163;0 a month</span></span><span class="chip"><span class="lg">under 3 hours</span><span class="sm">under 3h</span></span><span class="chip"><span class="lg">yours forever</span><span class="sm">yours forever</span></span></div>
+
       
     </div>
     <div class="reveal" style="position:relative;">
@@ -528,8 +542,9 @@
         <h2>The Free<br>Website<span>Playbook</span></h2>
         <div class="quote">&ldquo;Websites are not magic. They are just steps.&rdquo;</div>
       </div>
+      <div class="book-chips"><span class="chip"><span class="lg">no code</span><span class="sm">no code</span></span><span class="chip"><span class="lg">no monthly fees</span><span class="sm">&#163;0 a month</span></span><span class="chip"><span class="lg">under 3 hours</span><span class="sm">under 3h</span></span><span class="chip"><span class="lg">yours forever</span><span class="sm">yours forever</span></span></div>
       <span class="sticker s1">16 pages</span>
-      <span class="sticker s2">no code</span>
+      
     </div>
   </div>
 </section>
@@ -543,7 +558,7 @@
       <div class="num">OPTION 01</div>
       <h3>The Workbook</h3>
       <div class="price"><sup>$</sup>17</div><div class="once">one payment, yours forever</div>
-      <ul><li>All 12 steps, zero accounts to live on Google</li><li>The 9 question client questionnaire</li><li>Copy and paste prompts for your AI agent</li><li>Troubleshooting for the common walls</li></ul>
+      <ul><li>All 12 steps, zero accounts to live on Google</li><li>The 9 question client questionnaire</li><li>Free hosting options, and how to keep them free</li><li>Troubleshooting for the common walls</li></ul>
       <a href="#get" class="btn btn-primary" data-plan="workbook">Get the workbook <span class="arrow">&#8599;</span></a>
     </article>
     <article class="card reveal">
@@ -571,7 +586,7 @@
     <div class="badge"><span><b>$5</b><small>EXTRA</small></span></div>
     <div>
       <h3>The AI Prompt &amp; Advice Pack</h3>
-      <p>Every prompt from the playbook in one place, plus the advice I give clients, ready to paste into your agent.</p>
+      <p>Ready-made prompts and short advice notes for your AI agent, so it gets your site right the first time.</p>
       <div class="tags"><span>copy and paste</span><span>works with any workbook option</span></div>
     </div>
     <a href="#get" class="btn btn-outline" data-plan="pack" style="background:var(--cream);">Add it for $5</a>
