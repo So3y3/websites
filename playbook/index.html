@@ -487,7 +487,21 @@
   .extra-card .badge{left:50%;margin-left:-62px;top:-52px;margin-top:0;}
 }
 @media (max-width:520px){.steps{grid-template-columns:1fr;} .pb-hero{padding-top:6.2rem;}}
-@media (prefers-reduced-motion:reduce){.extra-card{animation:none;}}
+.chip .sm { display: none; }
+@media (max-width:520px){
+  .chips { flex-wrap: nowrap; gap: .35rem; }
+  .chip { font-size: .7rem; padding: .38rem .6rem; border-width: 2px; white-space: nowrap; }
+  .chip:nth-child(n) { transform: none; }
+  .chip .lg { display: none; }
+  .chip .sm { display: inline; }
+  .extra { margin-top: 3.6rem; }
+  .extra-card { display: block; padding: 1.4rem 1.3rem 1.6rem; animation: none; transform: rotate(1.2deg); }
+  .extra-card .badge { position: static; margin: 0 auto 1.1rem; width: 106px; height: 106px; transform: rotate(-6deg); }
+  .extra-card .badge b { font-size: 1.9rem; }
+  .extra-card .badge small { font-size: .66rem; }
+  .extra-card .btn { margin-top: 1.1rem; width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion:reduce){ .extra-card { animation: none; } }
 </style>
 </head>
 <body>
@@ -504,7 +518,7 @@
       <p class="kicker reveal"><span class="emoji">&#9201;</span> Under 3 hours. One brew. Zero excuses.</p>
       <h1 class="reveal">Build your own<br><span class="hi">website.</span><br>Pay <span class="co">£0</span> a month.</h1>
       <p class="lead reveal">The Free Website Playbook takes you from zero accounts to live on Google. No code, no developer, no monthly fees. Just steps, and you can follow steps.</p>
-      <div class="chips reveal"><span class="chip">no code</span><span class="chip">no monthly fees</span><span class="chip">under 3 hours</span><span class="chip">yours forever</span></div>
+      <div class="chips reveal"><span class="chip"><span class="lg">no code</span><span class="sm">no code</span></span><span class="chip"><span class="lg">no monthly fees</span><span class="sm">&#163;0 a month</span></span><span class="chip"><span class="lg">under 3 hours</span><span class="sm">under 3h</span></span><span class="chip"><span class="lg">yours forever</span><span class="sm">yours forever</span></span></div>
       
     </div>
     <div class="reveal" style="position:relative;">
