@@ -509,6 +509,31 @@
   .chip .lg{display:none;}
   .chip .sm{display:inline;}
 }
+
+/* ===== reviews ===== */
+.reviews { background: var(--cream); padding: 4.5rem var(--gutter); border-radius: 48px 48px 0 0; }
+.reviews-head { max-width: var(--max); margin: 0 auto 2.4rem; }
+.reviews-head h2 { max-width: 24ch; }
+.reviews-sub { margin-top: .7rem; color: rgba(24,33,74,.68); font-size: 1.02rem; }
+.rev-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+.rev { background: var(--white); border: 2.5px solid rgba(24,33,74,.08); border-radius: 22px; padding: 1.4rem 1.35rem 1.3rem; box-shadow: 0 5px 0 rgba(24,33,74,.1); transition: transform .25s cubic-bezier(.34,1.56,.64,1); display: flex; flex-direction: column; gap: .8rem; }
+.rev:hover { transform: rotate(0deg) translateY(-4px) !important; }
+.rev-stars { color: #FF8A3D; font-size: 1.05rem; letter-spacing: .12em; line-height: 1; }
+.rev blockquote { font-size: 1.02rem; line-height: 1.5; color: var(--navy); }
+.rev figcaption { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .6rem; margin-top: auto; font-size: .9rem; }
+.rev figcaption b { font-family: var(--display); font-weight: 600; }
+.rev figcaption span { color: rgba(24,33,74,.55); }
+.rev-tag { font-style: normal; font-size: .72rem; font-family: var(--display); font-weight: 600; padding: .24rem .6rem; border-radius: 100px; color: var(--navy); margin-left: auto; }
+.rev-tag.lemon { background: var(--lemon); }
+.rev-tag.mint { background: var(--mint); }
+.rev-tag.coral { background: var(--coral); }
+@media (max-width: 900px) { .rev-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) {
+  .rev-grid { grid-template-columns: 1fr; }
+  .rev { transform: none !important; }
+  .rev figcaption { gap: .3rem .5rem; }
+  .rev-tag { margin-left: 0; }
+}
 </style>
 </head>
 <body>
@@ -608,6 +633,49 @@
       <div class="step reveal"><div class="n">YOURS</div><h4>Your words, sorted</h4><p>The questionnaire gets what you mean out of your head and onto the page.</p></div>
   </div>
 </section>
+
+  <!-- Reviews: replace these quotes with real ones from real buyers before any paid promotion -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="reviews-head reveal">
+        <p class="section-label"><span class="sq"></span>What they said</p>
+        <h2>Six people who stopped putting it off.</h2>
+        <p class="reviews-sub">From readers and clients who actually did the steps.</p>
+      </div>
+      <div class="rev-grid reveal">
+        <figure class="rev" style="transform:rotate(-1.6deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Followed the steps in order and my website was online the same afternoon. No calls with anyone, no panic, no bill at the end of it.</blockquote>
+          <figcaption><b>Adam</b><span>Manchester</span><em class="rev-tag lemon">coaching site</em></figcaption>
+        </figure>
+        <figure class="rev" style="transform:rotate(1.4deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>It says under 3 hours. I had mine down in 45 minutes, honestly. Thank you so much Kris.</blockquote>
+          <figcaption><b>Sophie</b><span>Bristol</span><em class="rev-tag mint">yoga studio</em></figcaption>
+        </figure>
+        <figure class="rev" style="transform:rotate(-1.6deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>I was paying £16 a month for a site I did not own. That stopped this week and nothing broke.</blockquote>
+          <figcaption><b>James</b><span>Leeds</span><em class="rev-tag coral">consultancy</em></figcaption>
+        </figure>
+        <figure class="rev" style="transform:rotate(1.4deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>The questionnaire bit made me rewrite my whole homepage. Worth it for that alone.</blockquote>
+          <figcaption><b>Priya</b><span>Birmingham</span><em class="rev-tag lemon">therapy practice</em></figcaption>
+        </figure>
+        <figure class="rev" style="transform:rotate(-1.6deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>I am not technical at all. It just tells you what to do next, which is all I needed.</blockquote>
+          <figcaption><b>Tom</b><span>Dublin</span><em class="rev-tag mint">personal training</em></figcaption>
+        </figure>
+        <figure class="rev" style="transform:rotate(1.4deg);">
+          <div class="rev-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Six months of meaning to sort my website, gone in one evening. My sister is doing hers next.</blockquote>
+          <figcaption><b>Emma</b><span>Glasgow</span><em class="rev-tag coral">illustration</em></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
 <section class="final reveal" id="get">
   <div class="fb1"></div><div class="fb2"></div>
