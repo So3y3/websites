@@ -466,6 +466,9 @@
     a.port-card { display: block; text-decoration: none; color: inherit; }
     .port-card .visit { display: block; font-family: var(--display); font-weight: 600; font-size: 0.74rem; margin-top: 0.35rem; opacity: 0.9; }
     .port-card:hover .visit { text-decoration: underline; }
+
+    .pb-link { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem; font-family: var(--display); font-weight: 600; font-size: .98rem; background: var(--lemon); color: var(--navy); padding: .65rem 1.2rem; border-radius: 100px; border: 2.5px solid var(--navy); transform: rotate(-1.4deg); box-shadow: 0 4px 0 rgba(24,33,74,.18); transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease; }
+    .pb-link:hover { transform: translateY(-3px) rotate(1deg); box-shadow: 0 8px 0 rgba(24,33,74,.16); }
   </style>
 </head>
 <body>
@@ -480,6 +483,7 @@
       <a href="#about">About</a>
       <a href="#process">Process</a>
       <a href="#pricing">Pricing</a>
+      <a href="/playbook/">Playbook</a>
     </div>
     <a href="#contact" class="btn btn-primary">Get in touch <span class="arrow">&#8599;</span></a>
   </nav>
@@ -498,6 +502,7 @@
         <a href="#contact" class="btn btn-primary">Let's chat <span class="arrow">&#8599;</span></a>
         <a href="#work" class="btn btn-outline">See the work</a>
       </div>
+        <a href="/playbook/" class="pb-link">&#9889; Build it yourself? The Free Website Playbook, from $17 <span aria-hidden="true">&#8599;</span></a>
       <p class="hero-note reveal" style="margin-top: 1.5rem;">Flat £199 a site. Usually built and live within two weeks.</p>
     </div>
   </section>
