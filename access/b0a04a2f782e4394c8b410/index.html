@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>Your prompt pack | Wee Sites</title>
-<meta name="description" content="The eight prompts from the AI Prompt and Advice Pack.">
+<meta name="description" content="The AI Prompt and Advice Pack. Copy and paste ready.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -91,6 +91,35 @@ textarea{min-height:104px;resize:vertical}
 .ok{background:var(--mint);border:2.5px solid var(--navy);border-radius:16px;padding:20px 22px;display:none}
 .ok.on{display:block}
 .sec{margin:52px 0}
+
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px}
+.jump a{font-family:'Fredoka';font-weight:600;font-size:13.5px;text-decoration:none;color:var(--navy);
+  background:#fff;border:2px solid var(--navy);border-radius:999px;padding:8px 15px;transition:transform .16s ease,background .16s ease}
+.jump a:hover{background:var(--lemon);transform:translateY(-2px)}
+.pk{scroll-margin-top:20px}
+.pk h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:14px}
+.pk h3{margin:26px 0 10px}
+.pk p{color:var(--ink-soft)}
+.pk code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(24,33,74,.08);padding:1px 6px;border-radius:5px}
+.ul{margin:0 0 14px;padding-left:22px;color:var(--ink-soft)}
+.ul li{margin-bottom:7px}
+.ol{margin:0 0 14px;padding-left:24px;color:var(--ink-soft)}
+.ol li{margin-bottom:9px}
+.tip{background:var(--mint);border:2.5px solid var(--navy);border-radius:14px;padding:14px 18px;color:var(--navy)!important;margin:16px 0}
+.blk{background:#fff;border:2.5px solid var(--navy);border-radius:16px;overflow:hidden;margin:16px 0 22px;
+  box-shadow:0 6px 0 rgba(24,33,74,.13)}
+.blk-top{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--navy);color:var(--cream);padding:10px 14px}
+.blk-label{font-family:'Fredoka';font-weight:600;font-size:14.5px;letter-spacing:.02em}
+.blk pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;
+  line-height:1.6;color:var(--navy);background:#FFFDF7;white-space:pre;max-height:460px;overflow-y:auto;tab-size:2}
+.blk .copy{background:var(--lemon);flex:none}
+.tbl{overflow-x:auto;margin:12px 0 22px;border:2.5px solid var(--navy);border-radius:14px;background:#fff}
+.tbl table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+.tbl th{background:var(--navy);color:var(--lemon);font-family:'Fredoka';font-weight:600;text-align:left;padding:11px 14px;font-size:14px}
+.tbl td{padding:10px 14px;border-top:1px solid rgba(24,33,74,.13);vertical-align:top;color:var(--navy)}
+.tbl td:first-child{font-weight:600;white-space:nowrap}
+.tbl tbody tr:nth-child(even) td{background:#FFF4DE}
+@media(max-width:640px){.tbl table{font-size:14px}.blk pre{font-size:12px}}
 </style>
 </head>
 <body>
@@ -102,50 +131,536 @@ textarea{min-height:104px;resize:vertical}
 
 <section class="hero">
   <p class="kick">your prompt pack</p>
-  <h1>Eight prompts. Copy, fill, paste.</h1>
-  <p class="lede">Every one is a prompt I actually use. One prompt, one job. Fill in the brackets before you
-    send it, and never ask for a whole website with no context.</p>
+  <h1>Copy it. Paste it. Ship it.</h1>
+  <p class="lede">The system prompt, the code blocks and the rules I give my AI agent so a website comes out right the first time.
+    Every block has its own copy button, and the whole pack is also a PDF.</p>
 </section>
 
-<section class="grid split" style="margin-bottom:14px">
+<section class="grid split" style="margin-bottom:34px">
+  <div class="card lemon" style="display:flex;flex-direction:column;justify-content:center">
+    <h2>Take it with you</h2>
+    <p class="small" style="font-size:16px">The full pack as a PDF. Every code box is selectable, so you can copy straight from the file too.</p>
+    <p style="margin-top:8px"><a class="btn big" href="/downloads/ai-prompt-and-advice-pack-86dffc9a.pdf" download>Download the pack (PDF)</a></p>
+  </div>
   <div class="card tint">
-    <h2>How to use these</h2>
+    <h2>How to use it</h2>
     <div class="steps">
-      <div class="step"><span class="n"></span><div><b>One change per message.</b>
-        <p>Three requests in one prompt gets you two of them, badly.</p></div></div>
-      <div class="step"><span class="n"></span><div><b>Paste the error, never describe it.</b>
-        <p>It does not work gets a guess. The error gets a fix.</p></div></div>
-      <div class="step"><span class="n"></span><div><b>Start a new chat when it circles.</b>
-        <p>Long chats rot. Give it the file again and carry on.</p></div></div>
+      <div class="step"><span class="n"></span><div><b>Paste the system prompt first.</b><p>It sets the stack, speed, SEO and copy rules so the agent stops guessing.</p></div></div>
+      <div class="step"><span class="n"></span><div><b>Add the v2 additions straight after.</b><p>Spam protection, AI search visibility and build discipline.</p></div></div>
+      <div class="step"><span class="n"></span><div><b>Then work one job at a time.</b><p>Anything in [square brackets] is yours to fill in first.</p></div></div>
     </div>
   </div>
-  <div class="card lemon" style="display:flex;flex-direction:column;justify-content:center">
-    <span class="tag">next step</span>
-    <h2>Want it built instead?</h2>
-    <p class="small" style="font-size:16px">I build custom sites in plain code for £199, live usually inside two
-      weeks, and you own every file.</p>
-    <p style="margin-top:6px"><a class="btn" href="https://buy.stripe.com/eVq14m5MObR1eC5dsz5EY01">See the build · £199</a></p>
-  </div>
 </section>
 
-<section class="sec">
-  <h2>The prompts</h2>
-  <div class="prompt"><h3>1. Brief the agent properly</h3><p>You are building me a small, fast, single page website. Plain HTML, one CSS file, no frameworks, no build step. Before you write anything, ask me five questions about the business. Then write the page.</p><button class="copy" data-copy="You are building me a small, fast, single page website. Plain HTML, one CSS file, no frameworks, no build step. Before you write anything, ask me five questions about the business. Then write the page.">Copy prompt</button></div><div class="prompt"><h3>2. Fix whatever just broke</h3><p>This is the error I got: [paste it]. Here is the file it came from: [paste the file]. Tell me what is wrong in one sentence, then give me the corrected file. Do not rewrite anything I did not ask about.</p><button class="copy" data-copy="This is the error I got: [paste it]. Here is the file it came from: [paste the file]. Tell me what is wrong in one sentence, then give me the corrected file. Do not rewrite anything I did not ask about.">Copy prompt</button></div><div class="prompt"><h3>3. Make it sound like me, not like a robot</h3><p>Rewrite this copy so it sounds like a person talking, not a brochure. Short sentences. No unlock, no elevate, no journey. Keep it under [X] words. Here is the text: [paste it]</p><button class="copy" data-copy="Rewrite this copy so it sounds like a person talking, not a brochure. Short sentences. No unlock, no elevate, no journey. Keep it under [X] words. Here is the text: [paste it]">Copy prompt</button></div><div class="prompt"><h3>4. Page title and description for Google</h3><p>Write three options for a page title under 60 characters and a meta description under 155 characters for this page. The audience is [who]. The action I want is [what]. Tell me which one you would pick and why.</p><button class="copy" data-copy="Write three options for a page title under 60 characters and a meta description under 155 characters for this page. The audience is [who]. The action I want is [what]. Tell me which one you would pick and why.">Copy prompt</button></div><div class="prompt"><h3>5. Mobile check</h3><p>Look at this HTML and CSS and tell me everything that will break on a 390px wide phone. Then fix only those things.</p><button class="copy" data-copy="Look at this HTML and CSS and tell me everything that will break on a 390px wide phone. Then fix only those things.">Copy prompt</button></div><div class="prompt"><h3>6. Speed pass</h3><p>This page feels slow. List every change that would cut the load time, ordered by impact, then make the top three changes you are certain about.</p><button class="copy" data-copy="This page feels slow. List every change that would cut the load time, ordered by impact, then make the top three changes you are certain about.">Copy prompt</button></div><div class="prompt"><h3>7. Contact form wiring</h3><p>Wire this form to Formspree endpoint [endpoint]. Submit without leaving the page, show a success message in place, and keep the form fields exactly as they are.</p><button class="copy" data-copy="Wire this form to Formspree endpoint [endpoint]. Submit without leaving the page, show a success message in place, and keep the form fields exactly as they are.">Copy prompt</button></div><div class="prompt"><h3>8. The one I use most</h3><p>Explain what this code does in plain English, as if I have never seen it. Then tell me the one line most likely to cause a problem later.</p><button class="copy" data-copy="Explain what this code does in plain English, as if I have never seen it. Then tell me the one line most likely to cause a problem later.">Copy prompt</button></div>
-</section>
+<nav class="jump" aria-label="Pack contents"><a href="#system">System prompts</a><a href="#stack">Stack</a><a href="#perf">Speed</a><a href="#seo">SEO</a><a href="#aeo">AI search</a><a href="#blog">Blog and forms</a><a href="#spam">Spam</a><a href="#gbp">Google profile</a><a href="#ref">Reference</a><a href="#later">Lessons</a></nav>
+
+<section class="sec pk" id="system"><p class="kick">part 1 · paste these first</p><h2>The system prompts</h2><p>Paste the first block into your AI agent's instructions or system context before you start any website build. Then paste the v2 additions straight after it. Nothing in the original changes.</p><div class="blk" id="b1"><div class="blk-top"><span class="blk-label">System prompt</span><button class="copy" type="button" data-copy="You are an expert web developer and SEO specialist building fast,
+high-converting static HTML websites hosted on Vercel via GitHub.
+Follow this playbook precisely.
+
+STACK
+  Pure static HTML/CSS/JS. No frameworks, no React, no WordPress.
+  Files live in a public GitHub repo, auto-deployed by Vercel on every commit.
+  Forms via Formspree. Blog content in posts.json fetched via GitHub raw API.
+  Individual article pages are standalone HTML files in /articles/.
+
+PERFORMANCE RULES
+  - Images: logos/accreditations &lt; 15 KB, hero photos &lt; 60 KB.
+    Compress PNGs with pngquant or Pillow.quantize(64).
+    Compress JPGs with Pillow quality=72.
+  - NEVER embed images as base64. Always use file path references.
+  - Defer Google Fonts: use rel=preload / onload pattern, NOT a standard link tag.
+  - Add dns-prefetch and preconnect for fonts.googleapis.com and fonts.gstatic.com.
+  - Lazy-load all images below the fold: loading=&quot;lazy&quot;.
+  - Include explicit width/height on all img tags to prevent layout shift.
+  - Target Google PageSpeed mobile score &gt; 90.
+
+SEO RULES
+  Every page needs:
+    title (under 60 chars), meta description (under 160 chars),
+    canonical link, og:title, og:description, og:image (1200x630),
+    og:url, twitter:card, and JSON-LD structured data.
+  Use LocalBusiness or Person schema for coaching/service sites.
+  Add sitemap.xml listing ALL pages including /articles/ files.
+  Add robots.txt allowing all crawlers, blocking admin/private pages.
+  Blog articles MUST each have a standalone HTML page with unique title
+  and description. This is the highest-value SEO action.
+
+COPY RULES
+  Never use double-dash or em-dash punctuation. Rephrase or use a comma.
+  No filler phrases. Short punchy headlines. Include keywords near
+  the start of page titles and h1 tags.
+
+FORMS
+  Use Formspree for all forms. Separate endpoint per form type.
+  Every input that should appear in the email MUST have a name attribute.
+  Include hidden _subject field to label submissions meaningfully.
+  Test every form end-to-end before marking complete.
+
+DEPLOYMENT
+  All changes via GitHub API commits or direct push.
+  After any push, verify live site within 60 seconds.
+  Never edit files on Vercel directly. They get overwritten on next push.">Copy</button></div><pre>You are an expert web developer and SEO specialist building fast,
+high-converting static HTML websites hosted on Vercel via GitHub.
+Follow this playbook precisely.
+
+STACK
+  Pure static HTML/CSS/JS. No frameworks, no React, no WordPress.
+  Files live in a public GitHub repo, auto-deployed by Vercel on every commit.
+  Forms via Formspree. Blog content in posts.json fetched via GitHub raw API.
+  Individual article pages are standalone HTML files in /articles/.
+
+PERFORMANCE RULES
+  - Images: logos/accreditations &lt; 15 KB, hero photos &lt; 60 KB.
+    Compress PNGs with pngquant or Pillow.quantize(64).
+    Compress JPGs with Pillow quality=72.
+  - NEVER embed images as base64. Always use file path references.
+  - Defer Google Fonts: use rel=preload / onload pattern, NOT a standard link tag.
+  - Add dns-prefetch and preconnect for fonts.googleapis.com and fonts.gstatic.com.
+  - Lazy-load all images below the fold: loading="lazy".
+  - Include explicit width/height on all img tags to prevent layout shift.
+  - Target Google PageSpeed mobile score &gt; 90.
+
+SEO RULES
+  Every page needs:
+    title (under 60 chars), meta description (under 160 chars),
+    canonical link, og:title, og:description, og:image (1200x630),
+    og:url, twitter:card, and JSON-LD structured data.
+  Use LocalBusiness or Person schema for coaching/service sites.
+  Add sitemap.xml listing ALL pages including /articles/ files.
+  Add robots.txt allowing all crawlers, blocking admin/private pages.
+  Blog articles MUST each have a standalone HTML page with unique title
+  and description. This is the highest-value SEO action.
+
+COPY RULES
+  Never use double-dash or em-dash punctuation. Rephrase or use a comma.
+  No filler phrases. Short punchy headlines. Include keywords near
+  the start of page titles and h1 tags.
+
+FORMS
+  Use Formspree for all forms. Separate endpoint per form type.
+  Every input that should appear in the email MUST have a name attribute.
+  Include hidden _subject field to label submissions meaningfully.
+  Test every form end-to-end before marking complete.
+
+DEPLOYMENT
+  All changes via GitHub API commits or direct push.
+  After any push, verify live site within 60 seconds.
+  Never edit files on Vercel directly. They get overwritten on next push.</pre></div><div class="blk" id="b2"><div class="blk-top"><span class="blk-label">System prompt, v2 additions</span><button class="copy" type="button" data-copy="SPAM PROTECTION
+  - Every public form gets a Formspree _gotcha honeypot field,
+    a client-side honeypot guard (fake success card, send nothing)
+    and a 6-second time trap on submit.
+  - No captchas. Zero friction for real users.
+  - Mark spam in the Formspree dashboard to train the filter.
+    Spam submissions do not count toward the monthly quota.
+
+AI SEARCH VISIBILITY
+  - robots.txt must explicitly allow AI crawlers: GPTBot,
+    ChatGPT-User, OAI-SearchBot, PerplexityBot, Perplexity-User,
+    ClaudeBot, Claude-User, Google-Extended, Applebot-Extended,
+    Bingbot, CCBot.
+  - Add llms.txt at the site root: plain-language business summary,
+    pricing, audience, and notes-for-AI naming target queries.
+  - Add FAQPage JSON-LD matching the visible FAQ questions.
+
+BUILD DISCIPLINE
+  - Blog categories are toggle chips, never checkbox inputs.
+  - The writing dashboard needs a formatting toolbar and a live
+    Edit/Preview toggle that renders the article as published.
+  - Success cards live OUTSIDE the form element.
+  - Generated pages contain exactly one html, head and body set.
+  - On publish, auto-generate the 1200x630 OG image and update
+    the sitemap via the GitHub Contents API.
+  - 301-redirect every legacy URL when migrating a platform.
+  - Test every interactive change with headless Playwright and
+    confirm PASS before reporting completion.">Copy</button></div><pre>SPAM PROTECTION
+  - Every public form gets a Formspree _gotcha honeypot field,
+    a client-side honeypot guard (fake success card, send nothing)
+    and a 6-second time trap on submit.
+  - No captchas. Zero friction for real users.
+  - Mark spam in the Formspree dashboard to train the filter.
+    Spam submissions do not count toward the monthly quota.
+
+AI SEARCH VISIBILITY
+  - robots.txt must explicitly allow AI crawlers: GPTBot,
+    ChatGPT-User, OAI-SearchBot, PerplexityBot, Perplexity-User,
+    ClaudeBot, Claude-User, Google-Extended, Applebot-Extended,
+    Bingbot, CCBot.
+  - Add llms.txt at the site root: plain-language business summary,
+    pricing, audience, and notes-for-AI naming target queries.
+  - Add FAQPage JSON-LD matching the visible FAQ questions.
+
+BUILD DISCIPLINE
+  - Blog categories are toggle chips, never checkbox inputs.
+  - The writing dashboard needs a formatting toolbar and a live
+    Edit/Preview toggle that renders the article as published.
+  - Success cards live OUTSIDE the form element.
+  - Generated pages contain exactly one html, head and body set.
+  - On publish, auto-generate the 1200x630 OG image and update
+    the sitemap via the GitHub Contents API.
+  - 301-redirect every legacy URL when migrating a platform.
+  - Test every interactive change with headless Playwright and
+    confirm PASS before reporting completion.</pre></div></section><section class="sec pk" id="stack"><p class="kick">part 2 · the stack</p><h2>Why static HTML wins</h2><p>Plain HTML, CSS and JS beats WordPress, Wix, Squarespace and every JS framework for a small business site. It is not a compromise, it is the best choice.</p><div class="tbl"><table><thead><tr><th>Advantage</th><th>Detail</th></tr></thead><tbody><tr><td data-l="Advantage">Speed</td><td data-l="Detail">No server rendering. Pages load direct from CDN. PageSpeed 90+ easy.</td></tr><tr><td data-l="Advantage">Cost</td><td data-l="Detail">Hosting is free on Vercel. No monthly CMS subscriptions.</td></tr><tr><td data-l="Advantage">Control</td><td data-l="Detail">You own every line. No plugin conflicts, no forced updates.</td></tr><tr><td data-l="Advantage">SEO</td><td data-l="Detail">Fully custom meta tags, schema markup, page structure. No theme bloat.</td></tr><tr><td data-l="Advantage">Security</td><td data-l="Detail">No database, no login page, no bots exploiting CMS vulnerabilities.</td></tr><tr><td data-l="Advantage">AI-friendly</td><td data-l="Detail">AI agents read, edit, and push raw HTML directly via GitHub API.</td></tr></tbody></table></div><h3>The full stack</h3><div class="tbl"><table><thead><tr><th>Layer</th><th>Tool</th><th>Why</th></tr></thead><tbody><tr><td data-l="Layer">Code storage</td><td data-l="Tool">GitHub (public repo)</td><td data-l="Why">Free, version-controlled, AI-accessible via API</td></tr><tr><td data-l="Layer">Hosting/deploy</td><td data-l="Tool">Vercel</td><td data-l="Why">Free tier, auto-deploy on push, CDN, free SSL</td></tr><tr><td data-l="Layer">Domain DNS</td><td data-l="Tool">Namecheap (or any registrar)</td><td data-l="Why">Point A record + CNAME to Vercel</td></tr><tr><td data-l="Layer">Forms</td><td data-l="Tool">Formspree</td><td data-l="Why">No backend needed, submissions to email</td></tr><tr><td data-l="Layer">Blog content</td><td data-l="Tool">posts.json in GitHub repo</td><td data-l="Why">No database; editable via admin panel or agent</td></tr><tr><td data-l="Layer">Blog pages</td><td data-l="Tool">Static /articles/ HTML files</td><td data-l="Why">Individual URLs for Google indexing</td></tr><tr><td data-l="Layer">Admin panel</td><td data-l="Tool">Password-protected HTML + GitHub API</td><td data-l="Why">Write/publish posts without touching code</td></tr><tr><td data-l="Layer">Images</td><td data-l="Tool">Files in repo, served via CDN</td><td data-l="Why">Compressed; never base64</td></tr><tr><td data-l="Layer">Fonts</td><td data-l="Tool">Google Fonts (deferred)</td><td data-l="Why">Non-render-blocking via preload pattern</td></tr><tr><td data-l="Layer">Local SEO</td><td data-l="Tool">Google Business Profile</td><td data-l="Why">Google Maps presence for local queries</td></tr></tbody></table></div><h3>GitHub to Vercel in seven steps</h3><ol class="ol"><li>Create a GitHub account and a <b>public</b> repository.</li><li>Create a Vercel account via Continue with GitHub.</li><li>Add New Project, import the repo, click Deploy. No build settings for static HTML.</li><li>Add your custom domain under Settings, then Domains.</li><li>At your registrar add an <b>A record</b> (Host <code>@</code>, Value <code>76.76.21.21</code>) and a <b>CNAME</b> (Host <code>www</code>, Value <code>cname.vercel-dns.com</code>).</li><li>Wait 10 to 30 minutes. Vercel shows a green tick when it is live.</li><li>Every future GitHub push auto-deploys.</li></ol></section><section class="sec pk" id="perf"><p class="kick">part 3 · speed</p><h2>Performance</h2><p>Images are the number one cause of slow pages. Compress everything before you commit it.</p><div class="blk" id="b3"><div class="blk-top"><span class="blk-label">Image compression (Python, Pillow)</span><button class="copy" type="button" data-copy="# Compress JPG hero photo (target &lt; 60 KB)
+from PIL import Image
+img = Image.open(&quot;photo.jpg&quot;)
+img.save(&quot;photo.jpg&quot;, &quot;JPEG&quot;, quality=72, optimize=True)
+
+# Compress PNG logo / accreditation (target &lt; 15 KB)
+img = Image.open(&quot;logo.png&quot;).convert(&quot;RGBA&quot;)
+img = img.quantize(colors=64, method=2)
+img.save(&quot;logo.png&quot;, optimize=True)">Copy</button></div><pre># Compress JPG hero photo (target &lt; 60 KB)
+from PIL import Image
+img = Image.open("photo.jpg")
+img.save("photo.jpg", "JPEG", quality=72, optimize=True)
+
+# Compress PNG logo / accreditation (target &lt; 15 KB)
+img = Image.open("logo.png").convert("RGBA")
+img = img.quantize(colors=64, method=2)
+img.save("logo.png", optimize=True)</pre></div><h3>Defer Google Fonts</h3><p>A normal stylesheet link blocks rendering. Use the preload and onload pattern.</p><div class="blk" id="b4"><div class="blk-top"><span class="blk-label">HTML head</span><button class="copy" type="button" data-copy="&lt;!-- In &lt;head&gt; --&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link rel=&quot;preload&quot; as=&quot;style&quot;
+  href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap&quot;
+  onload=&quot;this.onload=null;this.rel=&#x27;stylesheet&#x27;&quot;&gt;
+&lt;noscript&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+    href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap&quot;&gt;
+&lt;/noscript&gt;">Copy</button></div><pre>&lt;!-- In &lt;head&gt; --&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link rel="preload" as="style"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+  onload="this.onload=null;this.rel='stylesheet'"&gt;
+&lt;noscript&gt;
+  &lt;link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"&gt;
+&lt;/noscript&gt;</pre></div><h3>Lazy loading and layout shift</h3><div class="blk" id="b5"><div class="blk-top"><span class="blk-label">HTML</span><button class="copy" type="button" data-copy="&lt;!-- loading=lazy on all images below the fold --&gt;
+&lt;!-- Always include width and height to prevent layout shift (CLS) --&gt;
+&lt;img src=&quot;photo.jpg&quot; loading=&quot;lazy&quot; alt=&quot;description&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;">Copy</button></div><pre>&lt;!-- loading=lazy on all images below the fold --&gt;
+&lt;!-- Always include width and height to prevent layout shift (CLS) --&gt;
+&lt;img src="photo.jpg" loading="lazy" alt="description" width="600" height="400"&gt;</pre></div><h3>Page weight targets</h3><div class="tbl"><table><thead><tr><th>Asset</th><th>Target</th><th>Method</th></tr></thead><tbody><tr><td data-l="Asset">HTML page</td><td data-l="Target">&lt; 100 KB</td><td data-l="Method">Remove inline base64, unused CSS</td></tr><tr><td data-l="Asset">Hero / headshot JPG</td><td data-l="Target">&lt; 60 KB</td><td data-l="Method">Pillow quality=72, max 1200px wide</td></tr><tr><td data-l="Asset">Logo / accreditation PNG</td><td data-l="Target">&lt; 15 KB</td><td data-l="Method">Pillow quantize(64 colours)</td></tr><tr><td data-l="Asset">Total first load</td><td data-l="Target">&lt; 300 KB</td><td data-l="Method">Compress all, defer fonts</td></tr><tr><td data-l="Asset">PageSpeed mobile</td><td data-l="Target">&gt; 90</td><td data-l="Method">Fonts deferred + images compressed</td></tr></tbody></table></div></section><section class="sec pk" id="seo"><p class="kick">part 4 · found on google</p><h2>SEO</h2><h3>Required meta tags, every page</h3><div class="blk" id="b6"><div class="blk-top"><span class="blk-label">HTML head</span><button class="copy" type="button" data-copy="&lt;head&gt;
+  &lt;title&gt;Your Name | Life Coach Belfast | Keyword (under 60 chars)&lt;/title&gt;
+  &lt;meta name=&quot;description&quot;
+        content=&quot;150-160 char description. Include keyword + location.&quot;&gt;
+  &lt;link rel=&quot;canonical&quot; href=&quot;https://www.yourdomain.co.uk/page&quot;&gt;
+
+  &lt;!-- Open Graph --&gt;
+  &lt;meta property=&quot;og:title&quot;       content=&quot;Same as title&quot;&gt;
+  &lt;meta property=&quot;og:description&quot; content=&quot;Same as description&quot;&gt;
+  &lt;meta property=&quot;og:type&quot;        content=&quot;website&quot;&gt;
+  &lt;meta property=&quot;og:url&quot;         content=&quot;https://www.yourdomain.co.uk/page&quot;&gt;
+  &lt;meta property=&quot;og:image&quot;       content=&quot;https://www.yourdomain.co.uk/og.jpg&quot;&gt;
+
+  &lt;!-- Twitter card --&gt;
+  &lt;meta name=&quot;twitter:card&quot;        content=&quot;summary_large_image&quot;&gt;
+  &lt;meta name=&quot;twitter:title&quot;       content=&quot;Same as title&quot;&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;Same as description&quot;&gt;
+  &lt;meta name=&quot;twitter:image&quot;       content=&quot;https://www.yourdomain.co.uk/og.jpg&quot;&gt;
+&lt;/head&gt;">Copy</button></div><pre>&lt;head&gt;
+  &lt;title&gt;Your Name | Life Coach Belfast | Keyword (under 60 chars)&lt;/title&gt;
+  &lt;meta name="description"
+        content="150-160 char description. Include keyword + location."&gt;
+  &lt;link rel="canonical" href="https://www.yourdomain.co.uk/page"&gt;
+
+  &lt;!-- Open Graph --&gt;
+  &lt;meta property="og:title"       content="Same as title"&gt;
+  &lt;meta property="og:description" content="Same as description"&gt;
+  &lt;meta property="og:type"        content="website"&gt;
+  &lt;meta property="og:url"         content="https://www.yourdomain.co.uk/page"&gt;
+  &lt;meta property="og:image"       content="https://www.yourdomain.co.uk/og.jpg"&gt;
+
+  &lt;!-- Twitter card --&gt;
+  &lt;meta name="twitter:card"        content="summary_large_image"&gt;
+  &lt;meta name="twitter:title"       content="Same as title"&gt;
+  &lt;meta name="twitter:description" content="Same as description"&gt;
+  &lt;meta name="twitter:image"       content="https://www.yourdomain.co.uk/og.jpg"&gt;
+&lt;/head&gt;</pre></div><h3>JSON-LD structured data</h3><div class="blk" id="b7"><div class="blk-top"><span class="blk-label">JSON-LD</span><button class="copy" type="button" data-copy="{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;LocalBusiness&quot;,
+  &quot;name&quot;: &quot;Your Name | Life Coach&quot;,
+  &quot;url&quot;: &quot;https://www.yourdomain.co.uk&quot;,
+  &quot;description&quot;: &quot;Short business description.&quot;,
+  &quot;telephone&quot;: &quot;+447xxxxxxxxx&quot;,
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;addressCountry&quot;: &quot;GB&quot;,
+    &quot;addressRegion&quot;: &quot;Northern Ireland&quot;
+  },
+  &quot;areaServed&quot;: [&quot;Northern Ireland&quot;,&quot;Ireland&quot;,&quot;United Kingdom&quot;],
+  &quot;knowsAbout&quot;: [&quot;Life Coaching&quot;,&quot;Business Coaching&quot;,&quot;Habit Coaching&quot;]
+}">Copy</button></div><pre>{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Your Name | Life Coach",
+  "url": "https://www.yourdomain.co.uk",
+  "description": "Short business description.",
+  "telephone": "+447xxxxxxxxx",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "GB",
+    "addressRegion": "Northern Ireland"
+  },
+  "areaServed": ["Northern Ireland","Ireland","United Kingdom"],
+  "knowsAbout": ["Life Coaching","Business Coaching","Habit Coaching"]
+}</pre></div><h3>sitemap.xml</h3><div class="blk" id="b8"><div class="blk-top"><span class="blk-label">XML</span><button class="copy" type="button" data-copy="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/&lt;/loc&gt;
+       &lt;priority&gt;1.0&lt;/priority&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/blog.html&lt;/loc&gt;
+       &lt;priority&gt;0.8&lt;/priority&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/articles/slug.html&lt;/loc&gt;
+       &lt;priority&gt;0.7&lt;/priority&gt;&lt;/url&gt;
+&lt;/urlset&gt;">Copy</button></div><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/&lt;/loc&gt;
+       &lt;priority&gt;1.0&lt;/priority&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/blog.html&lt;/loc&gt;
+       &lt;priority&gt;0.8&lt;/priority&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://www.yourdomain.co.uk/articles/slug.html&lt;/loc&gt;
+       &lt;priority&gt;0.7&lt;/priority&gt;&lt;/url&gt;
+&lt;/urlset&gt;</pre></div><h3>robots.txt</h3><div class="blk" id="b9"><div class="blk-top"><span class="blk-label">robots.txt</span><button class="copy" type="button" data-copy="User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /onboarding.html
+
+Sitemap: https://www.yourdomain.co.uk/sitemap.xml">Copy</button></div><pre>User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /onboarding.html
+
+Sitemap: https://www.yourdomain.co.uk/sitemap.xml</pre></div><h3>Blog articles are the biggest SEO multiplier</h3><p>Every article needs its own page at <code>/articles/{slug}.html</code> with a unique title, description, canonical URL and full body. Each one is a new page Google can rank for long-tail searches.</p><ul class="ul"><li>Unique title and description per article. Never share them.</li><li>Use h2 and h3 subheadings inside the article.</li><li>Link each article to the homepage and one related article.</li></ul></section><section class="sec pk" id="aeo"><p class="kick">part 4b · found by ai</p><h2>AI search visibility</h2><p>ChatGPT, Perplexity, Copilot and Claude increasingly answer the questions your clients type. Static HTML is ideal because crawlers read everything with no JavaScript in the way.</p><h3>robots.txt: allow the AI crawlers by name</h3><div class="blk" id="b10"><div class="blk-top"><span class="blk-label">robots.txt with AI crawlers</span><button class="copy" type="button" data-copy="User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /onboarding.html
+
+Sitemap: https://www.yourdomain.co.uk/sitemap.xml">Copy</button></div><pre>User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /onboarding.html
+
+Sitemap: https://www.yourdomain.co.uk/sitemap.xml</pre></div><h3>llms.txt</h3><p>A plain-text markdown file at the site root, written for language models. Keep it under a page.</p><ul class="ul"><li>One line: what the business is and does.</li><li>Pricing, stated plainly. For example: 199 pounds flat, no monthly fees.</li><li>Who it serves and what is included.</li><li>A notes-for-AI section naming the exact queries you want to be associated with.</li></ul><p class="tip">If location is irrelevant, say so in llms.txt: work is remote by email, video and WhatsApp, location is never a barrier, and the audience is every English-speaking market.</p><h3>FAQPage JSON-LD</h3><p>Match the visible FAQ word for word and add one question that tackles the biggest commercial objection head on.</p><div class="blk" id="b11"><div class="blk-top"><span class="blk-label">JSON-LD</span><button class="copy" type="button" data-copy="{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;FAQPage&quot;,
+  &quot;mainEntity&quot;: [{
+    &quot;@type&quot;: &quot;Question&quot;,
+    &quot;name&quot;: &quot;Do I pay anything every month?&quot;,
+    &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;,
+      &quot;text&quot;: &quot;No. One flat fee, no subscriptions,
+               no monthly fees of any kind.&quot; }
+  }]
+}">Copy</button></div><pre>{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Do I pay anything every month?",
+    "acceptedAnswer": { "@type": "Answer",
+      "text": "No. One flat fee, no subscriptions,
+               no monthly fees of any kind." }
+  }]
+}</pre></div></section><section class="sec pk" id="blog"><p class="kick">part 5 · blog and forms</p><h2>Blog and forms</h2><h3>Blog without a database</h3><p>All articles live in one JSON file committed to GitHub.</p><div class="blk" id="b12"><div class="blk-top"><span class="blk-label">posts.json</span><button class="copy" type="button" data-copy="{
+  &quot;posts&quot;: [
+    {
+      &quot;id&quot;:       &quot;unique-slug&quot;,
+      &quot;title&quot;:    &quot;Article Title&quot;,
+      &quot;category&quot;: &quot;Life Coaching&quot;,
+      &quot;date&quot;:     &quot;2026-07-09&quot;,
+      &quot;excerpt&quot;:  &quot;Short 1-2 sentence summary for blog grid.&quot;,
+      &quot;content&quot;:  &quot;## Heading\n\nFull article in Markdown.&quot;,
+      &quot;image&quot;:    &quot;https://optional-cover-image.jpg&quot;
+    }
+  ]
+}">Copy</button></div><pre>{
+  "posts": [
+    {
+      "id":       "unique-slug",
+      "title":    "Article Title",
+      "category": "Life Coaching",
+      "date":     "2026-07-09",
+      "excerpt":  "Short 1-2 sentence summary for blog grid.",
+      "content":  "## Heading\n\nFull article in Markdown.",
+      "image":    "https://optional-cover-image.jpg"
+    }
+  ]
+}</pre></div><div class="blk" id="b13"><div class="blk-top"><span class="blk-label">Fetch it from blog.html</span><button class="copy" type="button" data-copy="// Add ?_=Date.now() to cache-bust on every load
+const RAW = &quot;https://raw.githubusercontent.com/USER/REPO/main/posts.json&quot;;
+fetch(RAW + &quot;?_=&quot; + Date.now())
+  .then(r =&gt; r.json())
+  .then(data =&gt; renderPosts(data.posts));">Copy</button></div><pre>// Add ?_=Date.now() to cache-bust on every load
+const RAW = "https://raw.githubusercontent.com/USER/REPO/main/posts.json";
+fetch(RAW + "?_=" + Date.now())
+  .then(r =&gt; r.json())
+  .then(data =&gt; renderPosts(data.posts));</pre></div><h3>The three-pillar category model</h3><div class="tbl"><table><thead><tr><th>Category</th><th>Content</th></tr></thead><tbody><tr><td data-l="Category">Life Coaching</td><td data-l="Content">Habits, mindset, patterns, direction, life transitions</td></tr><tr><td data-l="Category">Longevity</td><td data-l="Content">Body, brain, biological age, nutrition, movement, performance</td></tr><tr><td data-l="Category">Business</td><td data-l="Content">Strategy, solopreneurship, SEO, visibility, growth stages</td></tr></tbody></table></div><h3>Forms with Formspree</h3><ul class="ul"><li>Create a <b>separate endpoint for each form type</b>.</li><li>Verify your email with Formspree to activate delivery.</li></ul><div class="blk" id="b14"><div class="blk-top"><span class="blk-label">Form HTML</span><button class="copy" type="button" data-copy="&lt;form action=&quot;https://formspree.io/f/YOUR_ENDPOINT&quot; method=&quot;POST&quot;&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;_subject&quot; value=&quot;New enquiry from website&quot;&gt;
+  &lt;input type=&quot;text&quot;   name=&quot;name&quot;     placeholder=&quot;Your name&quot;  required&gt;
+  &lt;input type=&quot;email&quot;  name=&quot;email&quot;    placeholder=&quot;Your email&quot; required&gt;
+  &lt;textarea            name=&quot;message&quot;  placeholder=&quot;Message&quot;&gt;&lt;/textarea&gt;
+
+  &lt;!-- Session booking fields (optional) --&gt;
+  &lt;input type=&quot;date&quot; name=&quot;session_date&quot;&gt;
+  &lt;input type=&quot;time&quot; name=&quot;session_time&quot;&gt;
+
+  &lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+&lt;/form&gt;">Copy</button></div><pre>&lt;form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST"&gt;
+  &lt;input type="hidden" name="_subject" value="New enquiry from website"&gt;
+  &lt;input type="text"   name="name"     placeholder="Your name"  required&gt;
+  &lt;input type="email"  name="email"    placeholder="Your email" required&gt;
+  &lt;textarea            name="message"  placeholder="Message"&gt;&lt;/textarea&gt;
+
+  &lt;!-- Session booking fields (optional) --&gt;
+  &lt;input type="date" name="session_date"&gt;
+  &lt;input type="time" name="session_time"&gt;
+
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</pre></div><p class="tip"><b>Critical:</b> every input that should appear in the email must have a name attribute.</p><div class="tbl"><table><thead><tr><th>Form type</th><th>Separate endpoint?</th><th>Key fields</th></tr></thead><tbody><tr><td data-l="Form type">Newsletter / subscribe</td><td data-l="Separate endpoint?">Yes</td><td data-l="Key fields">Email only</td></tr><tr><td data-l="Form type">Onboarding / intake</td><td data-l="Separate endpoint?">Yes</td><td data-l="Key fields">name, email, phone, pillar, session_date, session_time</td></tr><tr><td data-l="Form type">Offer / landing page</td><td data-l="Separate endpoint?">Can share intake</td><td data-l="Key fields">name, email, reason</td></tr></tbody></table></div></section><section class="sec pk" id="spam"><p class="kick">part 5b · no more bots</p><h2>Form spam protection, no captcha</h2><p>Public forms attract bots within days. Spam reaches your inbox, and every bot submission burns Formspree free-tier quota (50 a month). One wave can lock out real clients for the rest of the month.</p><ol class="ol"><li><b>Formspree _gotcha honeypot.</b> Filled hidden field means Formspree discards it without counting it against your quota.</li><li><b>Client-side guard.</b> If the field is filled, show the success card and send nothing. The bot believes it worked.</li><li><b>Time trap.</b> Block any submit within 6 seconds of page load. Bots submit instantly, people just press send again.</li></ol><div class="blk" id="b15"><div class="blk-top"><span class="blk-label">HTML (inside the form, before the visible fields)</span><button class="copy" type="button" data-copy="&lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; class=&quot;hp-field&quot;
+       tabindex=&quot;-1&quot; autocomplete=&quot;off&quot; aria-hidden=&quot;true&quot;&gt;
+
+&lt;!-- gentle note under the submit button --&gt;
+&lt;p class=&quot;form-note&quot; id=&quot;form-block-note&quot; style=&quot;display:none;&quot;&gt;
+  Please take a moment to check your details,
+  then press send again.&lt;/p&gt;">Copy</button></div><pre>&lt;input type="text" name="_gotcha" class="hp-field"
+       tabindex="-1" autocomplete="off" aria-hidden="true"&gt;
+
+&lt;!-- gentle note under the submit button --&gt;
+&lt;p class="form-note" id="form-block-note" style="display:none;"&gt;
+  Please take a moment to check your details,
+  then press send again.&lt;/p&gt;</pre></div><div class="blk" id="b16"><div class="blk-top"><span class="blk-label">CSS</span><button class="copy" type="button" data-copy=".hp-field { position: absolute; left: -9999px; top: -9999px;
+            width: 1px; height: 1px; opacity: 0; }">Copy</button></div><pre>.hp-field { position: absolute; left: -9999px; top: -9999px;
+            width: 1px; height: 1px; opacity: 0; }</pre></div><div class="blk" id="b17"><div class="blk-top"><span class="blk-label">JavaScript (before the normal fetch submit)</span><button class="copy" type="button" data-copy="var formOpenedAt = Date.now();
+form.addEventListener(&quot;submit&quot;, function (e) {
+  e.preventDefault();
+  var gotcha = form.querySelector(&#x27;[name=&quot;_gotcha&quot;]&#x27;);
+  if (gotcha &amp;&amp; gotcha.value) {              // a bot filled the trap
+    form.style.display = &quot;none&quot;;
+    if (successBox) successBox.classList.add(&quot;show&quot;); // fake success
+    return;                                  // send NOTHING
+  }
+  if (Date.now() - formOpenedAt &lt; 6000) {   // too fast
+    blockNote.style.display = &quot;block&quot;;
+    setTimeout(function() {
+      blockNote.style.display = &quot;none&quot;; }, 6000);
+    return;
+  }
+  // ... normal fetch(form.action) submit to Formspree
+});">Copy</button></div><pre>var formOpenedAt = Date.now();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var gotcha = form.querySelector('[name="_gotcha"]');
+  if (gotcha &amp;&amp; gotcha.value) {              // a bot filled the trap
+    form.style.display = "none";
+    if (successBox) successBox.classList.add("show"); // fake success
+    return;                                  // send NOTHING
+  }
+  if (Date.now() - formOpenedAt &lt; 6000) {   // too fast
+    blockNote.style.display = "block";
+    setTimeout(function() {
+      blockNote.style.display = "none"; }, 6000);
+    return;
+  }
+  // ... normal fetch(form.action) submit to Formspree
+});</pre></div><p>Test all three paths with headless Playwright: a bot with the honeypot filled sends zero requests, an instant submit is blocked, a patient human submit goes through. Confirm PASS before launch.</p><ul class="ul"><li>Mark any spam that still gets through as spam in Formspree. It trains the filter and spam does not count toward your limit.</li><li>The limit resets monthly. If real enquiries push past 50, upgrade. That is a good problem.</li><li>Use a separate endpoint per form type so one flood cannot poison another form.</li></ul></section><section class="sec pk" id="gbp"><p class="kick">part 6 · local</p><h2>Google Business Profile</h2><p>Gets you onto Google Maps and into local search. The fastest route to local visibility for a service business.</p><ol class="ol"><li>Always use an Incognito or Private window, so Google does not silently switch accounts.</li><li>Go to business.google.com, Add your business. Search for the name first.</li><li>Choose the primary category carefully: Life Coach, Business Coach and so on.</li><li>Choose <b>Service business</b>, not Add location, to hide your home address.</li><li>Add service areas at region and country level, not just one city.</li><li>Add website, phone, services, hours and a description.</li><li>Upload branded photos: profile or cover photo, service graphics, logo.</li></ol><h3>Video verification for home-based businesses</h3><p>Film yourself stating your name and business name, your working environment, your website open on screen, the Business Profile dashboard while logged in, and any certifications.</p><h3>Created on the wrong account?</h3><p>Business Profile, Settings, Managers. Invite the correct email as Owner, accept on that account, then remove the wrong one.</p><div class="blk" id="b18"><div class="blk-top"><span class="blk-label">Business description template</span><button class="copy" type="button" data-copy="Certified [Niche] Coach helping people across [Location]
+[core transformation, e.g. break repeating patterns / build momentum].
+From [differentiator 1] to [differentiator 2],
+all sessions run by phone or video.
+Founder of [Signature Method Name].">Copy</button></div><pre>Certified [Niche] Coach helping people across [Location]
+[core transformation, e.g. break repeating patterns / build momentum].
+From [differentiator 1] to [differentiator 2],
+all sessions run by phone or video.
+Founder of [Signature Method Name].</pre></div></section><section class="sec pk" id="ref"><p class="kick">part 7 · reference</p><h2>Files, copy rules, testing and mistakes</h2><h3>File structure and naming</h3><div class="tbl"><table><thead><tr><th>File/folder</th><th>Purpose</th><th>Notes</th></tr></thead><tbody><tr><td data-l="File/folder">index.html</td><td data-l="Purpose">Homepage</td><td data-l="Notes">Primary SEO page, pillar cards</td></tr><tr><td data-l="File/folder">blog.html</td><td data-l="Purpose">Blog listing</td><td data-l="Notes">Fetches posts.json dynamically</td></tr><tr><td data-l="File/folder">offer.html</td><td data-l="Purpose">Ad landing page</td><td data-l="Notes">Campaign-specific, not in nav</td></tr><tr><td data-l="File/folder">free.html</td><td data-l="Purpose">Free/trial offer page</td><td data-l="Notes">Alternative no-friction path</td></tr><tr><td data-l="File/folder">onboarding.html</td><td data-l="Purpose">Full intake form</td><td data-l="Notes">Private, not in nav</td></tr><tr><td data-l="File/folder">toolkit.html</td><td data-l="Purpose">Client tools</td><td data-l="Notes">Private, password-optional</td></tr><tr><td data-l="File/folder">admin.html</td><td data-l="Purpose">Post management</td><td data-l="Notes">Password-protected, not indexed</td></tr><tr><td data-l="File/folder">posts.json</td><td data-l="Purpose">All blog content</td><td data-l="Notes">Root of repo; repo must be public</td></tr><tr><td data-l="File/folder">/articles/</td><td data-l="Purpose">Standalone article pages</td><td data-l="Notes">One .html per post for SEO</td></tr><tr><td data-l="File/folder">/accreditations/</td><td data-l="Purpose">Certification logos</td><td data-l="Notes">Compressed PNGs, transparent bg</td></tr><tr><td data-l="File/folder">sitemap.xml</td><td data-l="Purpose">Page index for Google</td><td data-l="Notes">Update when new pages added</td></tr><tr><td data-l="File/folder">robots.txt</td><td data-l="Purpose">Crawler rules</td><td data-l="Notes">Block admin/private pages</td></tr></tbody></table></div><p class="tip"><b>URL slugs:</b> lowercase, hyphenated, no spaces or underscores. For example <code>/articles/break-the-loop.html</code>.</p><h3>Copy rules and brand voice</h3><div class="tbl"><table><thead><tr><th>Rule</th><th>Detail</th></tr></thead><tbody><tr><td data-l="Rule">No double-dash or em-dash</td><td data-l="Detail">Use a comma, semicolon, or rephrase.</td></tr><tr><td data-l="Rule">Active verbs in CTAs</td><td data-l="Detail">'Sign Up', 'Book a Call' instead of 'Submit' or 'Click here'</td></tr><tr><td data-l="Rule">Short headlines</td><td data-l="Detail">Under 8 words. Lead with benefit, not feature.</td></tr><tr><td data-l="Rule">No filler openers</td><td data-l="Detail">Never start with 'Welcome to' or 'We are proud to'</td></tr><tr><td data-l="Rule">Keywords near title start</td><td data-l="Detail">Put main keyword near start of title tag and h1</td></tr><tr><td data-l="Rule">Payment transparency</td><td data-l="Detail">Always clarify if no payment required at signup stage</td></tr><tr><td data-l="Rule">Specific social proof</td><td data-l="Detail">Real numbers: 'Top 17 worldwide', '30kg lost', not vague superlatives</td></tr><tr><td data-l="Rule">Article backgrounds</td><td data-l="Detail">Always white (#ffffff), never parchment or tinted</td></tr></tbody></table></div><h3>Pre-launch testing checklist</h3><div class="tbl"><table><thead><tr><th>Check</th><th>How to verify</th></tr></thead><tbody><tr><td data-l="Check">Site loads on mobile</td><td data-l="How to verify">Open on actual phone, not just desktop resize</td></tr><tr><td data-l="Check">All images load</td><td data-l="How to verify">Dev tools &gt; Network tab, look for 404 errors</td></tr><tr><td data-l="Check">Forms submit</td><td data-l="How to verify">Submit test entry, check inbox within 1 minute</td></tr><tr><td data-l="Check">Session date/time captured</td><td data-l="How to verify">Verify email payload contains session_date and session_time</td></tr><tr><td data-l="Check">All CTAs link correctly</td><td data-l="How to verify">Click every button on every page</td></tr><tr><td data-l="Check">No horizontal scroll mobile</td><td data-l="How to verify">Swipe left-right on phone. It should not scroll sideways</td></tr><tr><td data-l="Check">PageSpeed mobile &gt; 90</td><td data-l="How to verify">pagespeed.web.dev, test mobile specifically</td></tr><tr><td data-l="Check">sitemap.xml loads</td><td data-l="How to verify">Visit yourdomain.com/sitemap.xml, must render as XML</td></tr><tr><td data-l="Check">robots.txt loads</td><td data-l="How to verify">Visit yourdomain.com/robots.txt, must show content</td></tr><tr><td data-l="Check">Meta tags correct</td><td data-l="How to verify">Facebook Sharing Debugger: developers.facebook.com/tools/debug</td></tr><tr><td data-l="Check">HTTPS active</td><td data-l="How to verify">Padlock icon showing in browser</td></tr><tr><td data-l="Check">Canonical tags present</td><td data-l="How to verify">View source, search for canonical on each page</td></tr><tr><td data-l="Check">No broken links</td><td data-l="How to verify">Click every nav item and CTA on every page</td></tr></tbody></table></div><h3>Common mistakes to avoid</h3><div class="tbl"><table><thead><tr><th>Mistake</th><th>Impact</th><th>Fix</th></tr></thead><tbody><tr><td data-l="Mistake">Base64 images in HTML</td><td data-l="Impact">Page 3x heavier, not cached</td><td data-l="Fix">Use file path references always</td></tr><tr><td data-l="Mistake">Standard stylesheet link for fonts</td><td data-l="Impact">Blocks render, low PageSpeed</td><td data-l="Fix">Use preload/onload defer pattern</td></tr><tr><td data-l="Mistake">Form input missing name attribute</td><td data-l="Impact">Data not captured in email</td><td data-l="Fix">Add name= to every input</td></tr><tr><td data-l="Mistake">Repo set to Private</td><td data-l="Impact">posts.json unreadable by blog</td><td data-l="Fix">Keep GitHub repo Public</td></tr><tr><td data-l="Mistake">Multiple Google accounts in browser</td><td data-l="Impact">GBP on wrong account</td><td data-l="Fix">Use Incognito window</td></tr><tr><td data-l="Mistake">Editing files on Vercel directly</td><td data-l="Impact">Overwritten on next push</td><td data-l="Fix">Always edit via GitHub</td></tr><tr><td data-l="Mistake">No lazy loading on images</td><td data-l="Impact">Slower load, lower PageSpeed</td><td data-l="Fix">Add loading=lazy below fold</td></tr><tr><td data-l="Mistake">Missing canonical tags</td><td data-l="Impact">Google confused by duplicates</td><td data-l="Fix">Add canonical to every page</td></tr><tr><td data-l="Mistake">Articles without own HTML page</td><td data-l="Impact">Not individually indexed</td><td data-l="Fix">Generate /articles/{slug}.html</td></tr><tr><td data-l="Mistake">Sitemap not in Search Console</td><td data-l="Impact">Slow indexing</td><td data-l="Fix">Submit via Google Search Console</td></tr><tr><td data-l="Mistake">Admin page not blocked</td><td data-l="Impact">Security risk</td><td data-l="Fix">Add to Disallow in robots.txt</td></tr></tbody></table></div></section><section class="sec pk" id="later"><p class="kick">part 8 · lessons</p><h2>Patterns proven in later builds</h2><h3>Blog with dual post types</h3><ul class="ul"><li><b>Write New Article:</b> a full post written in the dashboard, published as a standalone /articles/ page.</li><li><b>Share a Link:</b> a link-drop card for external publications. microlink.io fetches the title, publisher and teaser, so the piece is credited without duplicating content.</li><li>Categories are <b>toggle chips</b>, not checkboxes. Checkbox plus label styling is fragile.</li></ul><h3>Editor with live preview</h3><ul class="ul"><li>A formatting toolbar above the body: Bold, Italic, H2, H3, Bullet, Link.</li><li>An Edit and Preview toggle that renders exactly as published and updates as you type.</li><li>Dashboard modal at 960px max-width, body textarea at 420px minimum height.</li></ul><h3>Publishing pipeline (GitHub Contents API)</h3><ul class="ul"><li>On publish, push posts.json, the standalone /articles/{slug}.html page, and a generated 1200x630 OG image to /og/.</li><li>The sitemap updates itself in the same flow.</li><li>Admin sits behind an #admin hash, with a fine-grained GitHub token limited to that one repo. The token lives in sessionStorage and is never committed.</li></ul><h3>Bug fixes worth remembering</h3><ul class="ul"><li>The success card must live <b>outside</b> the form element.</li><li>A generated page must contain exactly one html, head and body set.</li><li>Share buttons must point at the standalone article URL so social crawlers see the right OG tags. Use the Clipboard API with an execCommand fallback.</li></ul><h3>Migrations, analytics and testing</h3><ul class="ul"><li>Replacing Wix or any legacy platform: add 301 redirects in vercel.json for every old URL and verify each one.</li><li>Analytics: Umami, deferred script in the head. One website ID per site.</li><li>Test every interactive or JS change with headless Playwright. It must show PASS before you call it done.</li></ul></section>
 
 <section class="sec">
   <div class="card tint">
-    <h2>Stuck on a step the pack does not cover?</h2>
-    <p class="small" style="font-size:16px">90 minutes on your own screen, your actual site, no theory.</p>
-    <p style="margin-top:6px"><a class="btn ghost" href="https://buy.stripe.com/dRmeVccbc7ALfG9gEL5EY02">Book the call · £58</a></p>
+    <h2>If the agent starts going in circles</h2>
+    <p class="small" style="font-size:16px">Start a new chat, paste the system prompt again and give it the file. Long chats rot.
+      Paste errors, never describe them, and ask for one change per message.</p>
   </div>
 </section>
+
+<section class="sec">
+  <div class="card lemon upsell">
+    <div>
+      <span class="tag">next step</span>
+      <h2>Want it built instead?</h2>
+      <p class="small" style="font-size:16px">I build custom sites in plain code for £199, live usually inside two weeks, and you own every file.
+        Or get 90 minutes on your own screen for £58.</p>
+    </div>
+    <p style="display:flex;flex-direction:column;gap:12px;margin:0"><a class="btn" href="https://buy.stripe.com/eVq14m5MObR1eC5dsz5EY01">See the build · £199</a>
+      <a class="btn ghost" href="https://buy.stripe.com/dRmeVccbc7ALfG9gEL5EY02">Book the call · £58</a></p>
+  </div>
+</section>
+
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
   b.addEventListener('click', function(){
     var t=b.getAttribute('data-copy');
     function done(){ b.textContent='Copied'; b.classList.add('done');
-      setTimeout(function(){ b.textContent='Copy prompt'; b.classList.remove('done'); }, 1600); }
+      setTimeout(function(){ b.textContent='Copy'; b.classList.remove('done'); }, 1600); }
     function legacy(){
       var ta=document.createElement('textarea'); ta.value=t; ta.setAttribute('readonly','');
       ta.style.position='fixed'; ta.style.top='-1000px'; document.body.appendChild(ta);
